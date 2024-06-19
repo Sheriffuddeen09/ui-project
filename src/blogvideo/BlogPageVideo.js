@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-//import './post.css';
 import { useState } from "react"
 import { useParams } from 'react-router-dom';
 import { FacebookShareButton, WhatsappShareButton, TwitterShareButton, LinkedinShareButton,TelegramShareButton, EmailShareButton, FacebookIcon, WhatsappIcon, TwitterIcon, TelegramIcon, LinkedinIcon, EmailIcon } from "react-share";
