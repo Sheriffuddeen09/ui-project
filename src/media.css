@@ -872,9 +872,15 @@
     }
 .force{
   transform: translateY(10px);
+  position: relative;
+  left: -303px;
+  top: 103px;
 }
 .force1{
-  transform: translateY(20px);
+  transform: translateY(10px);
+  position: relative;
+  left: -607px;
+  top: 216px;
 }
     .main4{
       display: flex;
@@ -901,12 +907,12 @@
       max-width: 400px;
       padding: 40px;
       position: relative;
-      top: 120px;
+      top: 340px;
       border-radius: 10px;
       transform: translateX(40px);
     }
     .div23{
-      margin-top: 220px;
+      margin-top: 440px;
       translate: 37px;
     }
     .div30{

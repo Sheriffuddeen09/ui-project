@@ -1,12 +1,19 @@
 import ScrollTrigger from 'react-scroll-trigger'
 import CountUp from 'react-countup'
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 const Main = () =>{
 
     const [value, setValue] = useState(false)
 
+    useEffect(() =>{
+        AOS.init({duration: 2000})
+    }, [])
+
     return(
-    <div className="div22">
+    <div className="div22" data-aos="zoom-out"> 
         <div className="divblack divbla" style={{width: '160px', translate:'5px', marginTop:'-90px'}}>
             <div>
             <div style={{fontSize:'10px'}} className="div1">
