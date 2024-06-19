@@ -1,19 +1,13 @@
-import { FacebookShareButton, WhatsappShareButton, TwitterShareButton, LinkedinShareButton,TelegramShareButton, EmailShareButton, FacebookIcon, WhatsappIcon, TwitterIcon, TelegramIcon, LinkedinIcon, EmailIcon } from "react-share";
 import {useState} from 'react'
 
 const MessageComment = ({comment, ChatDelete}) =>{
 
-    const [share, setShare] = useState(false)
-    const showUrl = window.location.href 
     const [isVisible, setIsVisible] = useState(false)
 
     const toggleSubmit = () =>{
         setIsVisible(!isVisible)
     } 
-    const toggleShare = () =>{
-        setShare(!share)
-    }
-    
+   
 
     return(
 

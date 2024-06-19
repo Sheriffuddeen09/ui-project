@@ -1,14 +1,10 @@
-import { useState, useRef, useEffect } from "react"
+import { useState, useEffect } from "react"
 import { Link, useNavigate } from "react-router-dom";
-//import axios from "../api/apiAxios"
 
 const USER_REGEX = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%-]).{8,24}$/
 
 const Register = () => {
-
-    const REGISTER = '/register'
-    const errRef = useRef()
 
      const navigate = useNavigate()
     const goBack = () => navigate(-1)

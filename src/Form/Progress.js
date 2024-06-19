@@ -4,9 +4,11 @@ import { useMemo } from "react"
 const Progress = () => {
     const {page, title} = useFormContext()
     const navigate = useNavigate()
-    const goBack = () => navigate(-1)
+   
  
     return useMemo(() => {
+    
+        const goBack = () => navigate(-1)
     const interval = 100 / Object.keys(title).length
     const progress = ((page + 1) * interval).toFixed(2)
     const steps = Object.keys(title).map((step, i) => (
@@ -36,6 +38,6 @@ const Progress = () => {
         </div>
     ) 
 
-    }, [page,title])
+    }, [page,title, navigate])
 }
 export default Progress
