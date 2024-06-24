@@ -13,7 +13,7 @@ const MessageComment = ({comment, ChatDelete}) =>{
 
         <div>
             
-            <span className="postsitem">
+            <span className="postsitem commentnow">
             <p className="postpara">{comment.messageMe} </p>
             <p className="postparagr">{comment.date}</p>
             

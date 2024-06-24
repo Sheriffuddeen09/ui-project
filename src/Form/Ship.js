@@ -19,7 +19,7 @@ const Ship = () =>{
             <div className="div1">
             <span className="span1">
                 <label className="label1">FirstName </label>
-                <input className="input2"
+                <input className="input2 inputs1"
             type='text' placeholder="Firstname"
              disabled={data.sameAsBilling}
              value={data.shipFirstName}
@@ -30,7 +30,7 @@ const Ship = () =>{
             </span>
             <span className="span1">
             <label className="label2">LastName </label>
-            <input className="input2"
+            <input className="input2 inputs2"
             type='text' placeholder="Lastname"
             pattern="([A-Z])[\w+.]{1,}"
              value={data.shipLastName}

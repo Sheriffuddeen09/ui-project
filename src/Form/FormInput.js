@@ -12,7 +12,7 @@ const FormInput = () =>{
         2: <Pay/>,
     }
     return (
-        <div>
+        <div style={{width:'300px', zIndex:'1'}}>
              {display[page]}
         </div>
     )

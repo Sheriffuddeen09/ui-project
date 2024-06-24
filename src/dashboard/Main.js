@@ -15,7 +15,7 @@ const Main = () =>{
     return(
     <div className="div22" data-aos="zoom-out"> 
         <div className="divblack divbla" style={{width: '160px', translate:'5px', marginTop:'-90px'}}>
-            <div>
+            <div className='marked'>
             <div style={{fontSize:'10px'}} className="div1">
                 <p>Marketing</p>
                 <p>This Week</p>
@@ -25,11 +25,11 @@ const Main = () =>{
                 <p className="div2"> </p>
                 <p className="div3">Aquisition</p>
                 </div>
-                <div className="div4">
+                <div className="div4 div4i">
                 <p className="div5"> </p>
                 <p className="div7">Purchase</p>
                 </div>
-                <div className="div4">
+                <div className="div4 div4ii">
                 <p className="div6"> </p>
                 <p className="div8">Retention</p>
                 </div>

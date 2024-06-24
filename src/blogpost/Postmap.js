@@ -3,7 +3,7 @@ const Postmap = ({posts, handleDelete, comment}) =>{
 
 
     return (
-       <div className="">
+       <div className="allmedia">
 
         {
             posts.map((post) =>(

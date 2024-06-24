@@ -29,7 +29,7 @@ const PostComment = ({comment, handleComment, post}) =>{
           </button>
         </span>  
         <ul onClick={toggleLike} className="likereply">
-        <li className={`'like' ${likes ? 'dislike' : 'like'}`}>Like</li>
+        <li className={`'like colike' ${likes ? 'dislike' : 'like colike'}`}>Like</li>
         <li> <Link style={{
             textDecoration: 'none',
             color: 'black'

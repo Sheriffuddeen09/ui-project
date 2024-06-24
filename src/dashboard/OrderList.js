@@ -7,7 +7,7 @@ const OrderList = ({post}) =>{
             </p>
             <div className='div28'>
                 <span>
-                <img src={post.icons} alt='iphone' width={30} height={30} className='phone'/>
+                <img src={post.icons} alt='iphone' className='phone' width={30} height={30}/>
                 </span>
             <div className='div27i'>
             <p>
@@ -27,7 +27,7 @@ const OrderList = ({post}) =>{
             </div>
             </div>
             <div className='div28'>
-                <img src={post.icona} alt='iphone' width={30} height={30} />
+                <img src={post.icona} alt='iphone' className='phone' width={30} height={30}/>
             <div className='div27i'>
             <p>
                 {post.name}
@@ -46,7 +46,7 @@ const OrderList = ({post}) =>{
             </div>
             </div>
             <div className='div28'>
-                <img src={post.icons} alt='iphone' width={30} height={30} />
+                <img src={post.icons} alt='iphone' className='phone' width={30} height={30} />
             <div className='div27i'>
             <p>
                 {post.name}
@@ -65,7 +65,7 @@ const OrderList = ({post}) =>{
             </div>
             </div>
             <div className='div28'>
-                <img src={post.icona} alt='iphone' width={30} height={30} />
+                <img src={post.icona} alt='iphone' className='phone' width={30} height={30} />
             <div className='div27i'>
             <p>
                 {post.name}
@@ -84,7 +84,7 @@ const OrderList = ({post}) =>{
             </div>
             </div>
             <div className='div28'>
-                <img src={post.icona} alt='iphone' width={30} height={30} />
+                <img src={post.icona} alt='iphone' className='phone' width={30} height={30} />
             <div className='div27i'>
             <p>
                 {post.name}
@@ -103,7 +103,7 @@ const OrderList = ({post}) =>{
             </div>
             </div>
             <div className='div28'>
-                <img src={post.icona} alt='iphone' width={30} height={30} />
+                <img src={post.icona} alt='iphone' className='phone' width={30} height={30} />
             <div className='div27i'>
             <p>
                 {post.name}
@@ -122,7 +122,7 @@ const OrderList = ({post}) =>{
             </div>
             </div>
             <div className='div28'>
-                <img src={post.icons} alt='iphone' width={30} height={30} />
+                <img src={post.icons} alt='iphone' className='phone' width={30} height={30} />
             <div className='div27i'>
             <p>
                 {post.name}
@@ -142,7 +142,7 @@ const OrderList = ({post}) =>{
             </div>
             
             <div className='div28'>
-                <img src={post.icona} alt='iphone' width={30} height={30} />
+                <img src={post.icona} alt='iphone' className='phone' width={30} height={30} />
             <div className='div27i'>
             <p>
                 {post.name}

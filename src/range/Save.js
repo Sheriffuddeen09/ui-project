@@ -3,7 +3,7 @@ const Save = () =>{
 
     return (
         <div className="h0217">
-            <div className="h017">
+            <div className="h017" style={{width:'400px'}}>
                 <p className="h015">
                 Securing your 
                 <br />

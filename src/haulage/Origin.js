@@ -45,7 +45,7 @@ let options
         {content}
         </span>
         <span>
-        <p className="pp"> Drop off Location</p>
+        <p className="pp py"> Drop off Location</p>
         <Location />
         </span>
         </div>

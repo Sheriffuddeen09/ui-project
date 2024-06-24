@@ -9,7 +9,7 @@ const Bill = () =>{
             <div className="div1">
             <span className="span1">
                 <label className="label1">FirstName </label>
-                <input className="input2"
+                <input className="input2 inputs1"
             type='text' placeholder="Firstname"
              value={data.billFirstName}
              pattern="([A-Z])[\w+.]{1,}"
@@ -19,7 +19,7 @@ const Bill = () =>{
             </span>
             <span className="span1">
             <label className="label2">LastName </label>
-            <input className="input2"
+            <input className="input2 inputs2"
             type='text' placeholder="Lastname"
             pattern="([A-Z])[\w+.]{1,}"
              value={data.billLastName}

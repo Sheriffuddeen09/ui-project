@@ -50,7 +50,7 @@ let options
         </div>
         <div className="shipline">
         <span>
-        <p className="pp cp"> Goods Total FreightWeight</p>
+        <p className="pp cp"> Goods Total Weight</p>
         <FreightWeight />
         </span>
         <button className="buttons">

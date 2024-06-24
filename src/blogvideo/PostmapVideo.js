@@ -3,7 +3,7 @@ const PostmapVideo = ({video, handleDelete, comment}) =>{
 
 
     return (
-       <div>
+       <div className="allpost allpostvi">
 
         {
             video.map((post) =>(

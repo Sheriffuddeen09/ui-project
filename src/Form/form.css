@@ -9,7 +9,8 @@ body{
     color: black;
     width: 40%;
     display: flex;
-    flex-flow: column nowrap;
+    height: 115vh;
+    flex-flow: column wrap;
     padding: 20px;
     font-size: 20px;
     font-weight: bold;
@@ -17,10 +18,9 @@ body{
 
 .input1{
     padding: 10px;
-   border: 2px solid rgb(64, 64, 66);
-    
+    border: 2px solid rgb(64, 64, 66);
     border-radius: 20px;
-    width: 250px;
+    width: 100px;
     margin-left: 30px;
     margin-top: 15px;
     margin-bottom: 20px;
@@ -31,7 +31,7 @@ body{
 }
 .div1{
     display: flex;
-    flex-direction: row;
+    flex-direction: row ;
  }
  .label1{
     translate: 40px;
@@ -107,7 +107,7 @@ body{
 .button:disabled{
     background-color: rgb(107, 107, 107);
     color: white;
-    
+    transform: translateY(-10px);
 }
 input:disabled{
     background-color: rgb(107, 107, 107);
@@ -121,10 +121,11 @@ input:invalid{
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    transform: translateY(20px);
 }
 .ship{
     display: inline-flex;
-    margin-top: -15px;
+    margin-top: -35px;
 }
 .pay{
     translate: 30px;
@@ -155,6 +156,7 @@ input:invalid{
     width: 40%;
     margin: 5px auto 30px;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     position: relative;
@@ -227,8 +229,8 @@ progress::after{
     border-radius: 20px;
     font-size: 15px;
     width: 100px;
-    translate: 250px;
+    translate: 380px;
     cursor: pointer;
     margin-top: 20px;
-    transform: translateY(-95px);
+    transform: translateY(35px);
 }

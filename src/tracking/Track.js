@@ -12,7 +12,7 @@ const [search, setSearch] = useState('')
         <p className="book2 h7a"> 
         Shipments in One Place
         </p>  
-        <div>
+        <div className="track">
             <span>
             <p className="p2 pc"> Job Number</p>
                 <input 

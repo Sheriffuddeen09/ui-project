@@ -33,7 +33,7 @@ const Freight = () =>{
                 </p>
                 <p className="h009">
                     Ship across the ocean today &nbsp;
-                <span className='rote'>^</span>
+                <span className='rote' style={{rotate: '360deg'}} >^</span>
                 </p>
             </div>
             <div className="h010" data-aos="fade-up">
@@ -66,7 +66,7 @@ const Freight = () =>{
             </p>
             <p className="h009">
                 Take off with Air Freight!&nbsp;
-                <span className='rote'>^</span>
+                <span className='rote' style={{transform: 'rotate(360deg)'}}>^</span>
             </p>
         </div>
         <div className="h014" data-aos="fade-up">
@@ -84,7 +84,7 @@ const Freight = () =>{
             </p>
             <p className="h009">
                 Hassle-Free Haulage Solutions!&nbsp;
-                <span className='rote'>^</span>
+                <span className='rote' style={{transform: 'rotate(360deg)'}}>^</span>
             </p>
         </div>
     </div>

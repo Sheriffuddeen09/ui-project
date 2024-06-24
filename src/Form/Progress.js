@@ -12,7 +12,7 @@ const Progress = () => {
     const interval = 100 / Object.keys(title).length
     const progress = ((page + 1) * interval).toFixed(2)
     const steps = Object.keys(title).map((step, i) => (
-        <div className="step" key={i}>Step { i + 1} 
+        <div className="step fontstep" key={i}>Step { i + 1} 
         
         </div>
     ))

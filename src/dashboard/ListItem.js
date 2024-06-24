@@ -3,7 +3,7 @@ const ListItem = ({item}) =>{
 
     return (
         <div className="mainer">
-            <div className="main">
+            <div className="main forcee">
                 <div className="main2">
                     <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" className="icon">
   <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" />
@@ -30,7 +30,7 @@ const ListItem = ({item}) =>{
                     </div>
                 </div>
             </div>
-            <div className="main force">
+            <div className="main force2">
                 <div className="main2">
                     <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" className="icon">
   <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" />
@@ -57,7 +57,7 @@ const ListItem = ({item}) =>{
                     </div>
                 </div>
             </div>
-            <div className="main force1">
+            <div className="main force3">
                 <div className="main2">
                     <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" className="icon">
   <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" />

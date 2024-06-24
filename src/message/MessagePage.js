@@ -24,12 +24,12 @@ const MessagePage = ({chatme,ChatSubmit, ChatDelete,chatTitle, setChatTitle, cha
 
     return(
         <div className='bodymessage'>
-        <div className=''>
+        <div className='allcomment'>
         {post &&
         <>      
         <div className='messageFlex'>
         <img src={post.logo} alt='iphone' width={60} height={60} className='messimage'/>
-            <span>
+            <span className=''>
                 <p className='messagetitle'> {post.surname}</p>
                 <p className='messagemin'> {post.min}</p>
             </span>

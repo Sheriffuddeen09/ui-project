@@ -29,7 +29,7 @@ const PostList = ({post, handleDelete, comment}) =>{
     }
 
     return(
-        <div>
+        <div className="allpost blogmediapo">
         <div className='mediapost'>
             
             <div className='postflex mediaflex'>
@@ -89,7 +89,7 @@ const PostList = ({post, handleDelete, comment}) =>{
             
         </div>
         <div className={`disablemenu ${isVisible ? 'disablemenu' : 'visible'}`} >
-        <span onClick={toggleFlex}>
+        <span onClick={toggleFlex} className='moveimgpost'>
             <img src={post.logo} alt='phone' height={400} width={600} className="blogimg blogimgpost"/>
          </span>
         <div className={`'menu-image' ${isImage ? 'menu-image' : 'button-menu'}`}>
@@ -97,13 +97,14 @@ const PostList = ({post, handleDelete, comment}) =>{
             X
             </button>
         <img src={post.logo} alt='phone' height={400} width={400} className="blogflex"/>
-        <span>
+        <span className="limoves">
         <button className="btn-slex" ><Link style={{
             textDecoration: 'none'
         }} to={`/post/${post.id}`}>{comment}</Link></button>
         <button className="btn-slex" onClick={toggleShare}>share</button>
         </span>
        </div>
+       <div className="nomoveline">
        <span className="commentline">
         <button style={{
             background:'whitesmoke',
@@ -144,6 +145,7 @@ const PostList = ({post, handleDelete, comment}) =>{
         
        </div>
         </span>
+        </div>
         </div>
         </div>
     )

@@ -18,7 +18,7 @@ return(
                 </p>
                 </span>
                 <span>
-                <p className={`rotate ${isVisible ? 'rotate1' : null}`}>
+                <p className={`'rotate1' ${isVisible ? 'rotate1' : 'rotate'}`}>
                     ^
                 </p>
             </span>

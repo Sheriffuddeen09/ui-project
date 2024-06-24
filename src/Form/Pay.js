@@ -3,13 +3,13 @@ import useFormContext from "./hook/useFormContext"
 const Pay = () =>{
      const {data, handleChange} = useFormContext()
     return (
-        <div>
+        <div className="payform">
             <span className="ship">
             <input className="check1"
             type='checkbox'
-            checked={data.payCheckBox}
+            checked={data.payCheckbox}
             onChange={handleChange}
-            name="payCheckBox"
+            name="payCheckbox"
              />
             </span>
              <div>

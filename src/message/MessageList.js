@@ -10,7 +10,7 @@ const MessageList = ({post, length}) =>{
 
     return(
         <div>
-        <div className=''>
+        <div className='allmessage '>
             
             <div className='postflex postflexmessage'>
             <span onClick={toggleFlex}>

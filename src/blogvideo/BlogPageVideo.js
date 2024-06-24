@@ -22,22 +22,22 @@ const BlogPageVideo = ({video, handleDelete, comment, handleComment, handleSubmi
     }
 
     return(
-        <div className='postbody'>
-        <div className='postbody'>
+        <div className=''>
+        <div className='postbody allmediablog'>
         {post &&
         <>        
             <div className='postflex postflexing'>
                 <img src={post.logo} alt='iphone' width={30} height={30} className='postim postimvideo'/>
             <div className='div27 div27a'>
-            <p className='linecoun' style={{width:'100px'}}>
+            <p className='linecoun linmove' style={{width:'100px'}}>
                 {post.title}
             </p>
             <p className='linecouns'>
                 {post.date}
             </p>
             </div>
-        <div className='menu-me ' onClick={toggleSubmit}>
-        <span>
+        <div className='menu-me videomenu' onClick={toggleSubmit}>
+        <span className='memumove'>
         <button className={`'button-bar' ${isVisible ? 'button-bar' : 'invision'}`}> 
             <div className='menu-button'> </div>
           </button>
@@ -62,24 +62,26 @@ const BlogPageVideo = ({video, handleDelete, comment, handleComment, handleSubmi
         <button onClick={() => handleDelete(post.id)} className='deletebutton'>x</button>
         </div>
             </div>
+            <p className='nomove'>
             <p className='bloglink bloglinkvideo'> 
             {post.name}
+            </p>
             </p>
             <span>
             <Video loop style={{width: '700px',
                                 translate: '0px'
 }}
-            onCanPlayThrough={() => console.log('video')} className="blogimg blogimgvideo">
+            onCanPlayThrough={() => console.log('video')} className="blogimg blogimgvideos">
                 <source src={post.icon} type="video/webm" width={400} height={400} />
             </Video>
          </span>
         
         <span className='buttonicon buttoniconvideo'>
-        <div style={{
+        <div className='many' style={{
                                 translate: '-200px'
 }}>
         <button className='btn-fles' onClick={() => setLike(prev => prev + 1)}>{like}</button>
-        <button className='btn-fles'>{comment}</button>
+        <button className='btn-fles comment'>{comment}</button>
         <button className='btn-fles share-btn' onClick={toggleShare}>share</button>
         </div>
         <div className={`'menu-share' ${share ? 'menu-share' : 'button-menu'}`}>

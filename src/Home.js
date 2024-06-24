@@ -9,6 +9,7 @@ import Footer from "./dashboard/Footer"
 import Footers from "./component/Footer"
 import SideBar from "./SideBar"
 import Accordion from "./component/Accordion"
+import './lowmedia.css'
 const Home = ({filterResult}) =>{
     
     return(

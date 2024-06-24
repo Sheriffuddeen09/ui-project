@@ -21,7 +21,7 @@ return (
         </div>
         <div className="div025">
         <span>
-            <input type="text" placeholder="Enter your email address" className="div023" />
+            <input type="text" placeholder="Enter your email" className="div023" />
         </span>
         <button className="div024">subscribe</button>
         </div>

@@ -1,5 +1,6 @@
 import FormInput from './FormInput'
 import useContent from './hook/useFormContext'
+import { Link } from 'react-router-dom'
 
 const Form = () =>{
 
@@ -25,7 +26,7 @@ const Form = () =>{
             <div className='but'> 
                 <button type='button' onClick={prevButton} disabled={disablePrev} className={`button ${prevHide}`}>PrevButton</button>
                 <button type='button' onClick={nextButton} disabled={disableNext} className={`button ${nextHide}`}>NextButton</button>
-                <button type='submit' disabled={!canSubmit} className={`button ${submitHide}`}>Submit</button>
+               <Link to={'/home'}> <button type='submit' disabled={!canSubmit} className={`button ${submitHide}`}>Submit</button> </Link>
             </div>
                 <FormInput />
             </form>

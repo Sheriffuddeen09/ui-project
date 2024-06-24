@@ -43,7 +43,7 @@ const SideBar = ({filterResult}) =>{
         <div className='filterbutton'> 
           <span style={{display:'inline-flex', gap:'10px'}} onClick={toggleSubmit}> 
             <p> Filter-Button</p>
-            <p className={`icon ${isVisible ? 'icons' : null}`}> ^ </p>
+            <p className={`'iconsfilter' ${isVisible ? 'iconsfilter' : 'iconfilter'}`}> ^ </p>
           </span>
           <span className={`hidden-box ${isVisible ? 'active' : 'hidden-box'}`}> <FilterButtons  filterResult={filterResult}/> </span>
         </div>

@@ -34,7 +34,7 @@ const Form = () =>{
         <ul className="ocean seperate">
             <Select />
         <div className="scroll">
-            <button onClick={() => handleToggle(1)} className={toggle === 1 ? "selected" : 'button'}>
+            <button onClick={() => handleToggle(1)} className={toggle === 1 ? "selected sele" : 'button'}>
                 Cosco
             </button >
             <button onClick={() => handleToggle(2)} className={toggle === 2 ? "selected" : 'button'}>

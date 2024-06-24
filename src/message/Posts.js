@@ -27,7 +27,7 @@ export const ChatList = [
         id: '4',
         min: moment().startOf('day').fromNow(),
         logo: Icon,
-        surname: 'product Olawale Sheriffuddeen',
+        surname: 'Olawale Sheriffuddeen',
         text: 'Write new message'
     },
     {

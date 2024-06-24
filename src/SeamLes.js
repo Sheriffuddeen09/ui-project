@@ -12,7 +12,7 @@ const SeamLes = () =>{
 return(
 
     <div className="">
-        <ul className="">
+        <ul className="ulr">
         <li onClick={() => handleToggle(1)} className={toggle === 1 ? "selecte2" : "li2"}>
                 Port to Door
             </li >
