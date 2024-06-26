@@ -1984,10 +1984,194 @@ left: 10px;
   position: relative;
   right: 220px;
 }
+.allflexpost{
+  transform: translateX(-65px);
+}
+.allpost{
+  position: relative;
+  right: 120px;
+}
+.btnvime{
+ position: relative;
+ right: 170px;
+}
+.menu-coun{
+  position: relative;
+  left: -40px;
+}
+.div27b{
+  position: relative;
+  left: 110px;
+}
+.postimvideo{
+  position: relative;
+  right: 30px;
+}
+.div27a{
+  position: relative;
+  right: 20px;
+}
+.videomenu{
+  position: relative;
+  left: -290px;
+}
+.nomove{
+ transform: translateX(-90px);
+ font-size: 13px;
+}
+.blogimgvideos{
+  max-width: 400px;
+  position: relative;
+  left: -80px;
+}
+.inputvideo{
+ position: relative;
+ right: 270px;
+}
+.postsitemvideo{
+  position: relative;
+  right: 270px;
+ }
+ .comment{
+  position: relative;
+  right: 350px;
+ }
+ .share-btn{
+  position: relative;
+  right: 350px;
+ }
+ .like-btn{
+    position: relative;
+    right: 350px;
+ }
+.blogimgvideo{
+  max-width: 400px;
+  position: relative;
+  right: 20px;
+}
 .commentline{
   position: relative;
   right: 70px;
 }
+.mmm{
+  position: relative;
+  left: 20px;
+}
+.menu-me{
+  position: relative;
+  right: 550px;
+}
+.commentnow{
+  position: relative;
+  right: 180px;
+}
+.commentinput{
+  position: relative;
+  right: 280px;
+}
+.menu-count{
+  position: relative;
+  right: 250px;
+}
+.blogpostlink{
+  position: relative;
+  right: 70px;
+  
+}
+.blogimgpost{
+  position: relative;
+  right: 70px;
+}
+.postsitempost{
+  position: relative;
+  right: 200px;
+}
+.inputblog{
+  position: relative;
+  right: 200px;
+}
+.sece{
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+.mainer{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+  position: relative;
+  left: 15px;
+}
+.join{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+  position: relative;
+  right: 15px;
+}
+.bar{
+  position: relative;
+  left: 20px;
+}
+.cona{
+  position: relative;
+  right: 5px;
+}
+.sect{
+  width: 410px;
+}
+.div32{
+  position: relative;
+  left: 150px;
+}
+body{
+  min-width: 100px;
+}
+
+html{
+  min-width: 100px;
+}
+.div28{
+  min-width: 300px;
+}
+#root{
+  min-width: 100px;
+}
+}
+@media only screen and (max-width: 732px){
+html{
+  width: 100%;
+  background-color: aqua;
+}
+.button-bar{
+  margin-right: 80px;
+}
+.logo{
+  position: relative;
+  left: 80px;
+}
+.sece{
+  position: relative;
+  left: -80px;
+}
+.main{
+  min-width: 210px;
+  margin-bottom: 20px;
+}
+.join{
+  margin-top: 5px;
+}
+.div28{
+  width: 110px;
+
+}
+.div30{
+  background-color: red;
+  max-width: 110%;
+}
+
 }
 
 @media(max-width: 412px){

@@ -29,8 +29,8 @@ const MessagePage = ({chatme,ChatSubmit, ChatDelete,chatTitle, setChatTitle, cha
         <>      
         <div className='messageFlex'>
         <img src={post.logo} alt='iphone' width={60} height={60} className='messimage'/>
-            <span className=''>
-                <p className='messagetitle'> {post.surname}</p>
+            <span className='mmm'>
+                <p className='messagetitle' style={{width:'70ch'}}> {post.surname}</p>
                 <p className='messagemin'> {post.min}</p>
             </span>
             <div className='menu-me' onClick={toggleSubmit} >

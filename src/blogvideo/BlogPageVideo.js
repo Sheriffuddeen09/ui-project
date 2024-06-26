@@ -72,7 +72,7 @@ const BlogPageVideo = ({video, handleDelete, comment, handleComment, handleSubmi
                                 translate: '0px'
 }}
             onCanPlayThrough={() => console.log('video')} className="blogimg blogimgvideos">
-                <source src={post.icon} type="video/webm" width={400} height={400} />
+                <source src={post.icon} type="video/webm" width={400} height={400}/>
             </Video>
          </span>
         
@@ -80,7 +80,7 @@ const BlogPageVideo = ({video, handleDelete, comment, handleComment, handleSubmi
         <div className='many' style={{
                                 translate: '-200px'
 }}>
-        <button className='btn-fles' onClick={() => setLike(prev => prev + 1)}>{like}</button>
+        <button className='btn-fles like-btn' onClick={() => setLike(prev => prev + 1)}>{like}</button>
         <button className='btn-fles comment'>{comment}</button>
         <button className='btn-fles share-btn' onClick={toggleShare}>share</button>
         </div>

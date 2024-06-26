@@ -36,7 +36,7 @@ const BlogPage = ({posts, handleDelete, comment, handleComment, handleSubmit, ti
         <div className='postbody allpostblog'>
         {post &&
         <>        
-            <div className='postflexing'>
+            <div className='postflexing allflexpost'>
                 <img src={post.image} alt='iphone' width={30} height={30} className='postIma'/>
             <div className='div27'>
             <p className='linecount lineblog' style={{width:'100ch'}}>
@@ -72,7 +72,7 @@ const BlogPage = ({posts, handleDelete, comment, handleComment, handleSubmit, ti
         <button onClick={() => handleDelete(post.id)} className='deletebutton deleteblogbutton'>x</button>
         </div>
             </div>
-            <p className='bloglink blogpostlink'> 
+            <p className='bloglink blogpostlink' style={{minWidth:'17ch'}}> 
             {post.name}
             </p>
             <span onClick={toggleFlex} className='moveimpost'>

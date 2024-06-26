@@ -97,11 +97,11 @@ const PostListVideo = ({post, handleDelete, comment}) =>{
          </span>
       
        <span className='buttonicon videobutton'>
-        <button className='btn-fles' onClick={handleCount}>{like}</button>
-        <button className='btn-fles'><Link style={{
+        <button className='btn-fles btnvime' onClick={handleCount}>{like}</button>
+        <button className='btn-fles btnvime'><Link style={{
             textDecoration: 'none'
         }} to={`/post/${post.id}`}>{comment}</Link></button>
-       <button className='btn-fles' onClick={toggleShare}>share</button>
+       <button className='btn-fles btnvime' onClick={toggleShare}>share</button>
         <div className={`'menu-share' ${share ? 'menu-share' : 'button-menu'}`}>
         <button onClick={toggleShare} className={`'closing-share' ${share ? 'closing-share' : 'close-bar'}`}> 
             X

@@ -27,7 +27,7 @@ export const FormProvider = ({children}) =>{
         shipState: '',
         shipCity: '',
         shipZipCode: '',
-        payCheckbox: true,
+        payCheckbox: false,
 
     })
 

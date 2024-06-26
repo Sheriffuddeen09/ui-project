@@ -1,18 +1,7 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(237, 234, 234);
-}
 html{
-  background-color: rgb(237, 234, 234);
+  background-color: rgb(234, 174, 174);
   width: 100%;
-}
-#root{
-  background-color: rgb(237, 234, 234);
+
 }
 .div2{
   display: flex;
@@ -140,6 +129,7 @@ button.selected{
   translate: 10px;
   margin: 3px 2px;
 }
+
 .select{
   padding: 15px;
   margin: 10px;
@@ -359,6 +349,24 @@ hr{
   flex-direction: row;
   justify-content: center;
   margin-top: 40px;
+
+}
+.allmessage{
+  transform: translateX(-90px);
+}
+.menu-count{
+  transform: translateX(-260px);
+}
+.postflexing{
+  transform: translateX(-50px);
+}
+.moveline{
+  transform: translateX(550px);
+  margin-top: -30px;
+
+}
+.many{
+  transform: translateX(100px);
 
 }
 li{
