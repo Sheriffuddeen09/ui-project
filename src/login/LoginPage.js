@@ -103,9 +103,9 @@ const LoginPage = () =>{
             <form onSubmit={handleSubmit}>
                 <div>
                 <div className="usern">
-                    <label>
+                    <p>
                         username:
-                    </label>
+                    </p>
                     <br />
                     <input 
                     className="inputs"
@@ -120,9 +120,9 @@ const LoginPage = () =>{
                     />
                 </div>
                     <div className="usern">
-                    <label>
+                    <p>
                         password:
-                    </label>
+                    </p>
                     <br />
                     <input 
                     className="inputs"

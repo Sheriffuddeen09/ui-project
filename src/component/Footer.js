@@ -9,11 +9,11 @@ return (
     <div className="div019">
      <div className="div020">
         <div className="div018">
-        <h6 className="div021">Get notified on any
+        <h6 className="div021" data-aos="flip-right">Get notified on any
             <br/>
             updates
         </h6>
-        <p className="div022">
+        <p className="div022" data-aos="fade-left">
             Stay up to date on announcements, offer and  
             <br/>
             mew product
@@ -21,14 +21,14 @@ return (
         </div>
         <div className="div025">
         <span>
-            <input type="text" placeholder="Enter your email" className="div023" />
+            <input type="text" placeholder="Enter your email" className="div023" data-aos="fade-right"/>
         </span>
-        <button className="div024">subscribe</button>
+        <button className="div024" data-aos="fade-right">subscribe</button>
         </div>
     </div>
     <span className="div018i"></span>
         <div className="div016">
-            <div>
+            <div data-aos="zoom-in">
                 <span><img src={Port} alt="" height={30} width={30}/></span>
                 <p>eCommerce</p>
                 <p>High Value Goods</p>
@@ -36,21 +36,21 @@ return (
                 <p>Nonprofits</p>
             </div>
     
-        <div>
+        <div data-aos="zoom-in">
             <h6>Products</h6>
             <p>Ocean Freiht</p>
             <p>Air Freight</p>
             <p>Land Logistics</p>
             <p>Custom</p>
         </div>
-      <div>  <h6>Legal</h6>
+      <div data-aos="zoom-in">  <h6>Legal</h6>
             <p>Privacy-End users</p>
             <p>Developers policy</p>
             <p>Terms</p>
             <p>Cookies</p>
             <p>Security</p>
         </div>
-        <div>
+        <div data-aos="zoom-in">
             <h6>Help & Resources</h6>
             <p>Careers</p>
             <p>FAQS</p>
@@ -67,7 +67,7 @@ return (
             <ol><main>Odukoya Sheriffuddeen Olawale</main></ol>
             </ul>
     </div>
-<span className='spa'>
+<span className='spa' data-aos="fade-right">
     <img src={Face} alt="facebook" className='imgse' width="25px" height="25px" />
     <img src={Twitter} alt="twitter" className='imgse' width="25px" height="25px" />
     <img src={whats} alt="whats" className='imgse' width="25px" height="25px" />

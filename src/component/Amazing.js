@@ -3,22 +3,22 @@ const Amazing = () =>{
 
     return(
         <div className="h055">
-        <p className="h056">
-            See what <span className="h057"> others are saying.</span>
+        <p className="h056" data-aos="zoom-in">
+            See what <span className="h057" data-aos="zoom-in">  others are saying.</span>
         </p>
-        <span className="h058"></span>
+        <span className="h058" data-aos="fade-left"></span>
 
         <div className="h059">
             <div className="h060">
-                <p className="h061">
+                <p className="h061" data-aos="fade-left">
                     “Amazing team to work with.”
                 </p>
-                <p className="h062">
+                <p className="h062" data-aos="fade-left">
                     Their team is knowledgeable and always goes above and beyond to
                     <br/> ensure my shipments arrive on time and in perfect condition.
                 </p>
             </div>
-            <div className="h063">
+            <div className="h063" data-aos="fade-left">
                 <p className="h064">
                    <span className="h066"> Lanre Sodeeq</span>
                     <br/>
@@ -29,9 +29,9 @@ const Amazing = () =>{
 
             </div>
         </div>
-        <span className="h067"></span>
+        <span className="h067" data-aos="fade-right"></span>
         <div className="h059">
-            <div className="h060">
+            <div className="h060" data-aos="fade-left">
                 <p className="h061">
                     “Fast and effective”
                 </p>
@@ -43,7 +43,7 @@ const Amazing = () =>{
                     money.
                 </p>
             </div>
-            <div className="h063">
+            <div className="h063" data-aos="fade-right">
                 <p className="h064">
                     <span className="h066"> Raj Kamapoosha</span>
                      <br/>
@@ -57,7 +57,7 @@ const Amazing = () =>{
             </div>
         </div>
         <span className="h067"></span>
-        <div className="h059">
+        <div className="h059" data-aos="fade-left">
             <div className="h060">
                 <p className="h061">
                     “Was easier than I expected”
@@ -68,7 +68,7 @@ const Amazing = () =>{
                     ensure my shipments arrive on time and in perfect condition.
                 </p>
             </div>
-            <div className="h063">
+            <div className="h063" data-aos="fade-right">
                 <p className="h064">
                    <span className="h066"> David Okon</span>
                     <br/>

@@ -33,9 +33,13 @@ const BlogPage = ({posts, handleDelete, comment, handleComment, handleSubmit, ti
     }
 
     return(
-        <div className='postbody allpostblog'>
+        <div className='postbodyme allpostblog' style={{width: '100%', overflow:'hidden', marginTop:'2px', translate:'8px'}} 
+        
+        >
         {post &&
-        <>        
+        <div style={{
+            translate:'140px'
+        }}>        
             <div className='postflexing allflexpost'>
                 <img src={post.image} alt='iphone' width={30} height={30} className='postIma'/>
             <div className='div27'>
@@ -48,7 +52,7 @@ const BlogPage = ({posts, handleDelete, comment, handleComment, handleSubmit, ti
             </div>
         <div className='menu-me menu-count' onClick={toggleSubmit}>
         <span className='buttonmove'>
-        <button className={`'button-bar' ${isVisible ? 'button-bar' : 'invision'}`}> 
+        <button className={`'button-bar' ${isVisible ? 'button-bar' : 'invision'}`} style={{backgroundColor:'whitesmoke', height:'30px'}}> 
             <div className='menu-button'> </div>
           </button>
         </span>   
@@ -72,7 +76,7 @@ const BlogPage = ({posts, handleDelete, comment, handleComment, handleSubmit, ti
         <button onClick={() => handleDelete(post.id)} className='deletebutton deleteblogbutton'>x</button>
         </div>
             </div>
-            <p className='bloglink blogpostlink' style={{minWidth:'17ch'}}> 
+            <p className='pte blogpostlink' style={{minWidth:'17ch'}}> 
             {post.name}
             </p>
             <span onClick={toggleFlex} className='moveimpost'>
@@ -138,7 +142,7 @@ const BlogPage = ({posts, handleDelete, comment, handleComment, handleSubmit, ti
                 />
             </form>
         </div>
-        </>
+        </div>
             }
             </div>
     )

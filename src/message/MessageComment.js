@@ -19,7 +19,7 @@ const MessageComment = ({comment, ChatDelete}) =>{
             
             <div className='menu' onClick={toggleSubmit}>
         <span>
-        <button className={`'button-bar' ${isVisible ? 'button-bar' : 'invision'}`}> 
+        <button className={`'button-bar' ${isVisible ? 'button-bar' : 'invision'}`} style={{translate:'-20px'}}> 
             <div className='menu-button'> </div>
           </button>
         </span>   

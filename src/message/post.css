@@ -269,7 +269,7 @@
     cursor: pointer;
   }
   .mins{
-    color: rgb(106, 244, 106);
+    color: var(--body_color);
     font-size: 11px;
   }
   .num{
@@ -277,20 +277,39 @@
     padding: 2px;
     height: 15px;
     width: 15px;
-    text-align: center;
-    font-size: 9px;
-    color: white;
     border-radius: 100%;
   }
+  .nu{
+    text-align: center;
+    font-size: 12px;
+    color: var(--body_color);
+    transform: translateY(-12px);
+  }
+  .menu-sharea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: rgb(0,0,0,.8);
+    width: 100%;
+    z-index: 1;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
   .message{
     font-size: 13px;
     text-transform: capitalize;
     font-weight: lighter;
+    color: var(--body_color);
 
   }
+  
+  
   .name{
     text-transform: capitalize;
-    font-size: 18px;        
+    font-size: 18px;  
+    color: var(--body_color);      
   }
   .messageFlex{
     display: flex;
@@ -300,7 +319,7 @@
   }
 .bodymessage{
 
-  background-color: white;
+  background-color: var(--body_background);
   height: 100vh;
 }
 .co{
@@ -327,9 +346,12 @@
   font-size: 17px;
   text-transform: capitalize;
   font-weight: bold;
+  color: var(--body_color);
 }
 .messagemin{
   font-size: 11px;
+  color: var(--body_color);
+
 }
 .messageline{
   content: '';
@@ -338,5 +360,5 @@
   background-color: rgb(210, 209, 209);
   width: 73%;
   margin: 10px auto;
-  translate: 90px;
+  translate: 60px;
 }

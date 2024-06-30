@@ -5,23 +5,23 @@ const Freight = () =>{
 
     return (
     <div className="trust">
-        <p className="h001">
+        <p className="h001" data-aos="fade-left">
             Trusted <span className="h00"> freight solutions </span> for 
         </p>
-        <p className="h002">
+        <p className="h002 " data-aos="fade-left">
             your supply chain
         </p>
-        <p className="h003">
+        <p className="h003" data-aos="fade-right">
             Let us handle the details and you can focus on
         </p>
-        <p className="h004">
+        <p className="h004" data-aos="fade-right">
             growing your business.
         </p> 
 <div className="h005">
     <div>
             <div className="h006" data-aos="fade-up">
                 <span>
-                    <img src={Two} alt="OnePor" width="350px" height="230px" className="imag" />
+                    <img src={Two} alt="OnePor" width="370px" height="230px" className="imag" />
                 </span>
                 <p className="h007">
                     Ocean Freight Service

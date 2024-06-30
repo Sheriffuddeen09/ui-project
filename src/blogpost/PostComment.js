@@ -6,7 +6,7 @@ const PostComment = ({comment, handleComment, post}) =>{
 
     const [isVisible, setIsVisible] = useState(false)
     const [likes, setLike] = useState(true)
-    const [value, setValue] = useState(false)
+    const [value] = useState(false)
     const [copy, setCopy] = useState(false)
 
     const toggleSubmit = () =>{
@@ -20,11 +20,11 @@ const PostComment = ({comment, handleComment, post}) =>{
 
         <div>
             <span className="postsitem postsitempost">
-            <input value={comment.item} onChange={(e) => setValue(e.target.value)} className="postpara" />
+            <p className="postpara">{comment.item}</p>
             <p className="postparagr">{comment.date}</p>
             <span onClick={toggleSubmit}>
                 
-        <button className={`'button-menu' ${isVisible ? 'button-menu' : 'invisible'}`}> 
+        <button className={`'button-menu' ${isVisible ? 'button-menu' : 'invisible'}`} style={{translate:'0px'}}> 
             <div className='menu-button'> </div>
           </button>
         </span>  
@@ -36,10 +36,10 @@ const PostComment = ({comment, handleComment, post}) =>{
         }} to={'/reply'} >Reply</Link></li>
         </ul>
             </span>
-        <div className="">
-        <span className={`'menu-toggle' ${isVisible ? 'menu-toggle' : 'button-menu'}`}>
-            <div className="menu-backgroud">
-            <button onClick={toggleSubmit} className={`'close-bar' ${isVisible ? 'closed' : 'close-bar'}`}> 
+        <div className="" >
+        <span className={`'delete-bar' ${isVisible ? 'delete-bar' : 'button-menu'}`} >
+            <div className="" style={{display:'flex', flexDirection:'column'}}>
+            <button onClick={toggleSubmit} className={`'clos-bar' ${isVisible ? 'closee' : 'clos-bar'}`}> 
             X
             </button>
             <Link to={`/update/${post.id}`} style={{
@@ -66,11 +66,11 @@ const PostComment = ({comment, handleComment, post}) =>{
                 textDecoration: 'none',
                 marginTop: '10px',
                 color: 'black',
-                backgroundColor:'transparent',
                 textAlign: 'center',
-                cursor: 'pointer'
-
-        }}>{copy ? 'Copied' : 'Copy'}</button>
+                cursor: 'pointer',
+                backgroundColor:'transparent',
+                border:'none'
+            }}>{copy ? 'Copied' : 'Copy'}</button>
             </CopyToClipboard>
             </div>
             </span>

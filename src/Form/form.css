@@ -3,6 +3,7 @@ body{
     display: flex;
     flex-flow: column nowrap;
 }
+gobuttonform
 .section{
     background-color: white;
     margin: -40px auto;
@@ -218,9 +219,10 @@ progress::after{
     position: absolute;
     font-weight: bold;
 }
+
 .gobuttonform{
-    background-color: white;
-    color: black;
+    background-color: var(--body_orderf);
+    color: var(--body_order);
     font-size: 15px;
     padding: 3px;
     text-align: center;

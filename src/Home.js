@@ -10,7 +10,8 @@ import Footers from "./component/Footer"
 import SideBar from "./SideBar"
 import Accordion from "./component/Accordion"
 import './lowmedia.css'
-const Home = ({filterResult}) =>{
+const Home = ({filterResult, orders, setOrders}) =>{
+    
     
     return(
 
@@ -53,17 +54,16 @@ const Home = ({filterResult}) =>{
         translate: '50px',
         margin:'5px'
     }} alt='logo' width={40} height={40} className='im'/>
-    <p style={{
+    <p className="met" style={{
         translate: '30px',
-        color: 'blue',
         width: '20ch',
         fontWeight: 'bold'
     }}> Landing Page</p>
     </div>
     <div>
-        <SideBar filterResult={filterResult} />
+        <SideBar filterResult={filterResult} orders={orders} setOrders={setOrders}/>
         <Footer />
-
+        
         </div>
         </div>
         </div>

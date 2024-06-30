@@ -5,7 +5,7 @@ import 'react-html5video/dist/styles.css'
 import {DefaultPlayer as Video} from 'react-html5video'
 import { FacebookShareButton, WhatsappShareButton, TwitterShareButton, LinkedinShareButton,TelegramShareButton, EmailShareButton, FacebookIcon, WhatsappIcon, TwitterIcon, TelegramIcon, LinkedinIcon, EmailIcon } from "react-share";
 import thum from './images/image-1.jpeg'
-const PostListVideo = ({post, handleDelete, comment}) =>{
+const PostListVideo = ({post, videohandleDelete, comment}) =>{
 
     const [isVisible, setIsVisible] = useState(false)
     const [like, setLike] = useState(JSON.parse(localStorage.getItem('count')) || 0)
@@ -27,7 +27,7 @@ const PostListVideo = ({post, handleDelete, comment}) =>{
     }
 
     return(
-        <div>
+        <div  style={{translate:'-80px'}}>
         <div className='mediapost'>
             
             <div className='postflex mediaflex'>
@@ -40,24 +40,25 @@ const PostListVideo = ({post, handleDelete, comment}) =>{
                 {post.date}
             </p>
             </div>
-        <div className='menu-me menu-coun'>
+        <div className='menu-me menu-coun' style={{translate:'-50px'}}>
         <span>
-        <button onClick={toggleSubmit} className={`'button-bar' ${isVisible ? 'button-bar' : 'invision'}`}> 
-            <div className='menu-button'> </div>
+        <button style={{backgroundColor:'whitesmoke', height:'30px'}} onClick={toggleSubmit} className={`'button-bar' ${isVisible ? 'button-bar' : 'invision'}`}> 
+            <div className='menu-button' > </div>
           </button>
         </span>   
-        <button onClick={() => handleDelete(post.id)} className={`disablemenu ${isVisible ? 'disablemenu' : 'deletebutton'}`}>
+        <button onClick={() => videohandleDelete(post.id)} className={`disablemenu ${isVisible ? 'disablemenu' : 'deletebutton'}`}>
                 X
             </button>
         <div className='postba'>
         </div>
         </div>
             </div>
-            <Link to={`/video/${post.id}`} className="bloglink blogmedialink"> 
-                {
+            <Link to={`/video/${post.id}`} className="bloglink blogmedialink" style={{translate:'20px'}}> 
+              <p className="pte">  {
                     (post.name).length <= 30 ?
                     post.name : `${(post.name).slice(0,25)}...see more`
                 }
+                </p>
             </Link>
             
         </div>

@@ -8,13 +8,13 @@ const Slider = () =>{
 
     return(
         <div className="h049">
-            <p className="h051">Oneport365 has supported these top companies</p>
+            <p className="h051" data-aos="fade-left">Oneport365 has supported these top companies</p>
             <div className="h050">
-            <img src={Ola} width={100} height={50} className='sli' alt="OLAM" />
-            <img src={Dan} width={100} height={50} className='sli' alt="DANGOTE" />
-            <img src={Tena} width={100} height={50} className='sli' alt="Tenatiza" />
-            <img src={Rec} width={100} height={50} className='sli' alt="recyclan" />
-            <img src={Afe}  width={100} height={50} className='sli' alt="AFEX" />
+            <img src={Ola} width={100} height={50} className='sli' alt="OLAM" data-aos="fade-left"/>
+            <img src={Dan} width={100} height={50} className='sli' alt="DANGOTE" data-aos="zoom-in"/>
+            <img src={Tena} width={100} height={50} className='sli' alt="Tenatiza" data-aos="flip-right"/>
+            <img src={Rec} width={100} height={50} className='sli' alt="recyclan" data-aos="flip-left"/>
+            <img src={Afe}  width={100} height={50} className='sli' alt="AFEX" data-aos="fade-right"/>
             </div>
         </div>
 

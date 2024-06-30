@@ -4,45 +4,48 @@ import Logs from './images/Logo-2.jpeg'
 export const order = [
     {
         price: '5000',
-        name: 'iphone 11',
         images: Logs,
-        id: 5,
+        id: 1,
         quantity: 1,
-        category:'iphonei'
+        category:'iphone'
 
     },
     {
         price: '4000',
-        name: 'iphone xr',
         images: Logs,
-        id: 1,
+        id: 2,
         quantity: 1,
-        category:'iphonex'
+        category:'shoe'
         
     },
     {
         price: '8000',
-        name: 'iphone 12',
         images: Icon,
-        id: 2,
+        id: 3,
         quantity: 1,
-        category:'iphoneii'
+        category:'watch'
     },
     {
         price: '200000',
-        name: 'iphone xr',
         images: Logs,
-        id: 3,
-        category:'iphonex',
+        id: 4,
+        category:'iphone',
         quantity: 1
         
     },
     {
         price: '10000',
-        name: 'iphone 13',
         images: Icon,
-        id: 4, 
-        category:'iphoneiii',
+        id: 5, 
+        category:'electronic',
+        quantity: 1
+        
+    },
+    {
+        price: '1000',
+        images: Icon,
+        id: 6, 
+        category:'jewelry',
         quantity: 1
         
     }

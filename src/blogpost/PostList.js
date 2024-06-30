@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import './post.css';
 import { useState } from "react"
 import { FacebookShareButton, WhatsappShareButton, TwitterShareButton, LinkedinShareButton,TelegramShareButton, EmailShareButton, FacebookIcon, WhatsappIcon, TwitterIcon, TelegramIcon, LinkedinIcon, EmailIcon } from "react-share";
-const PostList = ({post, handleDelete, comment}) =>{
+const PostList = ({post, handleDeletePost, comment}) =>{
 
     const showUrl = window.location.href 
 
@@ -29,7 +29,7 @@ const PostList = ({post, handleDelete, comment}) =>{
     }
 
     return(
-        <div className="allpost blogmediapo">
+        <div className="allpost blogmediapo" style={{overflow:'hidden'}}>
         <div className='mediapost'>
             
             <div className='postflex mediaflex'>
@@ -44,21 +44,24 @@ const PostList = ({post, handleDelete, comment}) =>{
             </div>
         <div className='menu-menu'>
         <span>
-        <button onClick={toggleSubmit} className={`'button-bar' ${isVisible ? 'button-bar' : 'invision'}`}> 
-            <div className='menu-button'> </div>
+        <button onClick={toggleSubmit} className={`'button-bar' ${isVisible ? 'button-bar' : 'invision'}`} style={{backgroundColor:'whitesmoke', height:'30px'}}> 
+            <div className='menu-button' > </div>
           </button>
         </span>   
-        <button onClick={() => handleDelete(post.id)} className="deletebutton">
+        <button onClick={() => handleDeletePost(post.id)} className="deletebutton">
                 X
             </button>
         <div className='postba'>
         </div>
         </div>
             </div>
-            <Link to={`/post/${post.id}`} className="bloglink blogpostlink"> 
-                {
+            
+            <Link to={`/post/${post.id}`} className="pte" > 
+            
+                { 
                     (post.name).length <= 30 ?
                     post.name : `${(post.name).slice(0,25)}...see more`
+                    
                 }
             </Link>
             
@@ -106,18 +109,11 @@ const PostList = ({post, handleDelete, comment}) =>{
        </div>
        <div className="nomoveline">
        <span className="commentline">
-        <button style={{
-            background:'whitesmoke',
-            border: 'none',
-            padding:'5px',
-            width:'60px', 
-            borderRadius: '15px',
-            translate: '-20px'
-        }} className={`'dislike' ${likes ? 'like' : 'dislike'}`} onClick={handleCount}>{like}</button>
         <button className={`'btnicon' ${isImage ? 'btnicon' : 'btn-flex'}`} ><Link style={{
             textDecoration: 'none'
         }} to={`/post/${post.id}`}>{comment}</Link></button>
         <button className={`'btnicon' ${isImage ? 'btnicon' : 'btn-flex'}`}  onClick={toggleShare}>share</button>
+        <button className={`'menlike' ${likes ? 'showlike' : 'menlike'}`}  onClick={handleCount}>{like}</button>
         <div className={`'menu-share' ${share ? 'menu-share' : 'button-menu'}`}>
         <button onClick={toggleShare} className={`'closing-share' ${share ? 'closing-share' : 'close-bar'}`}> 
             X

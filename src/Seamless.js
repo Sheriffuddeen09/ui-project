@@ -26,7 +26,7 @@ const Seamless = () =>{
     
 return(
 <section className="lidiv">  
-    <div className="seam">
+    <div className="seam" data-aos="zoom-in">
         <ul className="ocean">
             <li onClick={() => handleToggle(1)} className={toggle === 1 ? "selected1" : 'li'}>
                 Ocean Fright

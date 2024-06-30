@@ -5,7 +5,7 @@ import { FacebookShareButton, WhatsappShareButton, TwitterShareButton, LinkedinS
 import 'react-html5video/dist/styles.css'
 import {DefaultPlayer as Video} from 'react-html5video'
 import PostCommentVideo from './PostCommentVideo'
-const BlogPageVideo = ({video, handleDelete, comment, handleComment, handleSubmit, title,comments, setTitle}) =>{
+const BlogPageVideo = ({video, handleDeletevideo, comment, VideohandleDelete, handleVideoSubmit, titlevideo,commentvideos, setTitlevideo}) =>{
 
     const {id} = useParams()
     const post = video.find(post => (post.id).toString() === id)
@@ -23,12 +23,12 @@ const BlogPageVideo = ({video, handleDelete, comment, handleComment, handleSubmi
 
     return(
         <div className=''>
-        <div className='postbody allmediablog'>
+        <div className='postbo allmediablog'>
         {post &&
         <>        
             <div className='postflex postflexing'>
-                <img src={post.logo} alt='iphone' width={30} height={30} className='postim postimvideo'/>
-            <div className='div27 div27a'>
+                <img src={post.logo} alt='iphone' width={30} height={30} className='postim postimvideo' style={{translate:'80px'}}/>
+            <div className='div27 div27a' style={{translate:'-180px'}}>
             <p className='linecoun linmove' style={{width:'100px'}}>
                 {post.title}
             </p>
@@ -36,10 +36,10 @@ const BlogPageVideo = ({video, handleDelete, comment, handleComment, handleSubmi
                 {post.date}
             </p>
             </div>
-        <div className='menu-me videomenu' onClick={toggleSubmit}>
-        <span className='memumove'>
-        <button className={`'button-bar' ${isVisible ? 'button-bar' : 'invision'}`}> 
-            <div className='menu-button'> </div>
+        <div className='menu-me videomenu' onClick={toggleSubmit} style={{translate:'-450px'}}>
+        <span className='memumove' >
+        <button className={`'button-bar' ${isVisible ? 'button-bar' : 'invision'}`} style={{backgroundColor:'whitesmoke', height:'30px'}}> 
+            <div className='menu-button' > </div>
           </button>
         </span>   
         <div className='postba'>
@@ -59,11 +59,11 @@ const BlogPageVideo = ({video, handleDelete, comment, handleComment, handleSubmi
         </div>
         </span>
         </div>
-        <button onClick={() => handleDelete(post.id)} className='deletebutton'>x</button>
+        <button onClick={() => VideohandleDelete(post.id)} className='deletebutton'>x</button>
         </div>
             </div>
             <p className='nomove'>
-            <p className='bloglink bloglinkvideo'> 
+            <p className='pte bloglinkvideo' style={{translate:'130px'}}> 
             {post.name}
             </p>
             </p>
@@ -112,16 +112,16 @@ const BlogPageVideo = ({video, handleDelete, comment, handleComment, handleSubmi
         </span>
         <div>
             {
-                comments.map(comment=>(
-                    <PostCommentVideo key={post.id} post={post} comment={comment} handleComment={handleComment} />
+                commentvideos.map(comment=>(
+                    <PostCommentVideo key={post.id} post={post} comment={comment} handleDeletevideo={handleDeletevideo} />
                 ))
             }
-            <form onSubmit={handleSubmit}>
-                <input type='text' 
+            <form onSubmit={handleVideoSubmit}>
+             <input type='text' 
                 placeholder='comment'
-                value={title}
+                value={titlevideo}
                 className='input inputvideo'
-                onChange={(e) => setTitle(e.target.value)}
+                onChange={(e) => setTitlevideo(e.target.value)}
                 />
             </form>
         </div>

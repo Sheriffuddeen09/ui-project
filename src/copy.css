@@ -1,0 +1,37 @@
+:root{
+    --body_background: white;
+    --body_color: black;
+    --link_color: navy;
+    --body_title:blue;
+    --body_filter:black;
+    --body_colors:white;
+    --body_hover:black;
+    --body_cart: transparent;
+    --body_hovers:white;
+    --body_carts:rgb(52, 52, 52);
+    --body_order:black;
+    --body_orderf:white;
+    --body_orders: white;
+    --body_toggle: rgb(81, 80, 80);
+    --body_dashboard: rgb(195, 193, 193);
+    --body_togglef: white;
+    --body_nav: rgb(167, 230, 167);
+  }
+  
+  [dark-theme="dark"]{
+    --body_background: #17191c;
+    --body_color: white;
+    --body_toggle: rgb(247, 195, 195);
+    --body_togglef: black;
+    --body_cart: white;
+    --link_color: cyan;
+    --body_title:white;
+    --body_filter:white;
+    --body_colors:black;
+    --body_hover: orange;
+    --body_hovers:white;
+    --body_order:white;
+    --body_orderf: black;
+    --body_orders: rgb(163, 163, 163);
+  
+  }

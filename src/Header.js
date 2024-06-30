@@ -1,7 +1,8 @@
 import { Link, useLocation } from "react-router-dom"
 import { useState } from "react"
+import DarkMode from "./DarkMode"
 import Logo from './images/port.png'
-const Header = ({search, setSearch}) =>{
+const Header = ({search, setSearch, isChecked, handleChecked}) =>{
 const [country, setCountry] = useState('')
 const homepage = useLocation().pathname
 
@@ -70,6 +71,9 @@ const homepage = useLocation().pathname
             </select>
         </section>
         </span>
+        </div>
+        <div>
+          <DarkMode isChecked={isChecked} handleChecked={handleChecked} />
         </div>
               </nav>
     )

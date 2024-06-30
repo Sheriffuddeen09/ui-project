@@ -7,7 +7,7 @@ const Product = ({order}) =>{
         <div>
             <div className="product"> 
              <img src={order.images} alt='order' width={300} height={300}/>
-                <p> {order.name}</p>
+                <p> {order.category}</p>
                 <p> ${order.price}</p>
                 <button className="cartbutton" onClick={() => dispatch({type:"Add", order:order})}> Add To Cart</button>
             </div>

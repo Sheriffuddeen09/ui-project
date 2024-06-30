@@ -109,12 +109,12 @@ const Register = () => {
             <form onSubmit={handleSubmit}>
 
             <div className="user">
-                <label>
+                <p>
                     username: 
                     <br />
                     <span className={validName ? "valid" : "hide"}>✔️</span>
                     <span className={validName || !user ? "hide" : "invalid"}>❌</span>
-                </label>
+                </p>
                 <br />
                 <input 
                 className="logininput"
@@ -137,11 +137,11 @@ const Register = () => {
         </div>
             <div className="userpwd">
                 
-                <label>
+                <p>
                     Password: 
                     <br />
                     <span className={validPwd | !pwd ? 'hide' : 'invalide'}>❌</span>
-                </label>
+                </p>
 
                 <br />
                 <input className="logininput"
@@ -162,12 +162,12 @@ const Register = () => {
             </div>
             <div className="userp">
                 
-                <label>
+                <p>
                     Confirm Password: 
                     <br />
                     <span className={validMatch && matchPwd ? 'validName' : 'offscreen'}>✔️</span>
                 <span className={validMatch | !matchPwd ? 'hide' : 'invalide'}>❌</span>
-                </label>
+                </p>
                 <br />
                 <input className="logininput"
                 id="password"

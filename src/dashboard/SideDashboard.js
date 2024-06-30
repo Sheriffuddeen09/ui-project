@@ -14,9 +14,8 @@ return(
         translate: '40px',
         margin:'5px'
     }} alt='logo' width={40} height={40} className='im'/>
-    <p style={{
+    <p className='met' style={{
         translate: '50px',
-        color: 'blue',
         fontWeight: 'bold'
     }}> Metrix</p>
     </div>

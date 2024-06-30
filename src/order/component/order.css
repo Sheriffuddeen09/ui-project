@@ -5,8 +5,9 @@
     flex-direction: row ;
     margin: 10px 20px;
 }
+
 .ordercolumn{
-    background-color: white;
+    background-color: var(--body_background);
     display: flex;
     height: 170vh;
     flex-direction: column;
@@ -16,9 +17,14 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    color: var(--body_order);
 }
 .imageorder{
     transform: translateY(18px);
+    background-color: var(--body_cart);
+    color: var(--body_filter);
+    border-radius: 15px;
+
 }
 .order{
     padding: 15px;
@@ -28,7 +34,7 @@
 }
 .cartbutton{
     background-color: orange;
-    color: white;
+    color: var(--body_color);
     padding: 10px;
     width: 150px;
     transition: all 2s ease-in-out;
@@ -36,7 +42,7 @@
 }
 .cartbutton:hover{
     background-color: black;
-    color: white;
+    color: var(--body_color);
     padding: 10px;
     width: 150px;
     border: none;
@@ -46,7 +52,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(243, 240, 240);
+    background-color: var(--body_orders);
     padding: 10px;
     margin: 2px 20px;
 }
@@ -57,38 +63,39 @@
     align-items: center;
 }
 .removeButton{
-    color: white;
-    background: red;
+    color: var(--body_orderf);
+    background: var(--body_order);
     border: none;
     border-radius: 15px;
     padding: 12px;
 }
+
 .increase{
-    color: white;
-    background-color: blue;
+    color: var(--body_orderf);
+    background: var(--body_order);
     padding: 8px;
     translate: 40px;
     border: none;
     border-radius: 15px;
 }
 .decrease{
-    color: white;
-    background-color: green;
+    color: var(--body_orderf);
+    background: var(--body_order);
     padding: 8px;
     border: none;
     translate: 40px;
     border-radius: 15px;
 }
 .quantity{
-    color: white;
-    background-color: black;
+    color: var(--body_orderf);
+    background: var(--body_order);
     padding: 8px;
     border: none;
     border-radius: 15px;
     translate: 40px;
 }
 .price{
-    color: black;
+    color: var(--body_orderf);
     translate: -40px;
     font-size: 20px;
     text-transform: capitalize;
@@ -96,18 +103,20 @@
 .imagecart{
     background-color: transparent;
 }
+
 .total{
     margin: 20px;
     padding: 20px;
+    color: var(--body_orderf);
     font-size: 20px;
 }
 .cartbackground{
-    background: white;
+    background: var(--body_color);
 }
 .shop{
-    background-color: red;
+    background-color: var(--body_color);
     border-radius: 10px;
-    color: white;
+    color: var(--body_colors);
     padding: 5px;
 }
 .filterbutton{
@@ -115,6 +124,15 @@
     font-size: 16px;
     font-weight: bold;
     margin-top: 10px;
+    width: 20ch;
+    cursor: pointer;
+}
+.filterbutton{
+    translate: 150px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: var(--body_title);
     width: 20ch;
     cursor: pointer;
 }
@@ -128,10 +146,9 @@
     rotate: 180deg;
     translate: 15px;
     position: relative;
-    top: 1px;
+    top: -3px;
 }
-.filter-button{
-    background-color: rgb(249, 166, 10);
+.activate{
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -141,6 +158,37 @@
     font-weight: bold;
     border-radius: 10px;
     margin-top: 10px;
-    color: white;
+    color: var(--body_color);
     text-align: center;
+    background-color: black;
+}
+.filter-button{
+    background-color: var(--body_filter);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    border: none;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: var(--body_colors);
+    text-align: center;
+    transition: all 2s ease-in-out;
+}
+.filter-button:hover{
+    background-color: var(--body_hover);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    border: none;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: var(--body_hovers);
+    text-align: center;
+    transition: all 2s ease-in-out;
 }

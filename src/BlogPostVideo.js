@@ -2,34 +2,37 @@ import PostmapVideo from "./blogvideo/PostmapVideo"
 import logo from './images/images5.png'
 import SideBar from "./SideBar"
 import Footer from "./dashboard/Footer"
-const BlogPostVideo = ({handleDelete, video, comment}) =>{
+const BlogPostVideo = ({videohandleDelete, video, comment}) =>{
     
     return(
 
-        <div className='sidebar'>
+        <div className='sidebar' >
         <div className="home">
         <div className="div22">
-        <PostmapVideo video={video} comment={comment} handleDelete={handleDelete}/>
+        <PostmapVideo video={video} comment={comment} videohandleDelete={videohandleDelete}/>
         </div>
         </div>
-        <div className='nav'>
+        <div className='navChat'>
         <div style={{
+        translate: '90px',
         display: 'flex',
         flexDirection:'column',
-        translate: '85px',
     }}>
     <img src={logo} style={{
-        translate: '40px',
+        translate: '22px',
         margin:'5px'
     }} alt='logo' width={40} height={40} className='im'/>
-    <p style={{
-        translate: '50px',
-        color: 'blue',
+    <p className="met" style={{
+        translate: '30px',
         fontWeight: 'bold',
         width:'20ch'
     }}> Blog-Video</p>
     </div>
-    <div>
+    <div style={{
+        display: 'flex',
+        flexDirection:'column',
+
+    }}>
         <SideBar />
         <Footer />
 

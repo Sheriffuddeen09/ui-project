@@ -35,11 +35,11 @@ const MessagePage = ({chatme,ChatSubmit, ChatDelete,chatTitle, setChatTitle, cha
             </span>
             <div className='menu-me' onClick={toggleSubmit} >
             <span>
-        <button onClick={toggleSubmit} className={`'button-bar' ${isVisible ? 'button-bar' : 'invision'}`}> 
+        <button onClick={toggleSubmit} className={`'button-bar' ${isVisible ? 'button-bar' : 'invision'}`} style={{backgroundColor:'whitesmoke', height:'30px', translate:'-150px'}}> 
             <div className='menu-button'> </div>
           </button>
         </span>   
-        <button onClick={() => ChatDelete(post.id)} className="deletebutton">
+        <button onClick={() => ChatDelete(post.id)} className="deletebutton" style={{translate:'190px'}}>
                 X
         </button>
         <div>

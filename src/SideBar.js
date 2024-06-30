@@ -1,21 +1,24 @@
-import {useState} from 'react'
+import { useState } from "react"
+import FilterButtons from "./FilterButton"
 import { Link } from "react-router-dom"
-import FilterButtons from './FilterButton'
-
-const SideBar = ({filterResult}) =>{
+const SideBar = ({orders, setOrders}) =>{
 
     const [isVisible, setIsVisible] = useState(false)
 
     const toggleSubmit = () =>{
         setIsVisible(!isVisible)
     }
+   
     return (
         <div>
         <div className='menu'>
 
-        <ul className=''>
+        <ul className='' style={{
+        display: 'flex',
+        flexDirection:'column',
+    }}>
             <li>
-            <Link to='/user' className='sidedash'>UserPage</Link>
+            <Link to='/user' className='sidedash sidelink'>UserPage</Link>
             </li>
             <li>
             <Link to='/mes' className="sidedash">Message</Link>
@@ -39,14 +42,15 @@ const SideBar = ({filterResult}) =>{
             </ul>
 
         <div>
-        </div>
         <div className='filterbutton'> 
           <span style={{display:'inline-flex', gap:'10px'}} onClick={toggleSubmit}> 
             <p> Filter-Button</p>
             <p className={`'iconsfilter' ${isVisible ? 'iconsfilter' : 'iconfilter'}`}> ^ </p>
           </span>
-          <span className={`hidden-box ${isVisible ? 'active' : 'hidden-box'}`}> <FilterButtons  filterResult={filterResult}/> </span>
+          <span className={`hidden-box ${isVisible ? 'active' : 'hidden-box'}`}> <FilterButtons orders={orders}  setOrders={setOrders}/> </span>
         </div>
+        </div>
+        
         </div>
   
   </div>

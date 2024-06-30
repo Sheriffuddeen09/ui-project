@@ -17,12 +17,6 @@ const MessageList = ({post, length}) =>{
             <img src={post.logo} alt='iphone' width={60} height={60} className='messimage'/>
 
          </span>
-        <div className={`'menu-image' ${isImage ? 'menu-image' : 'button-menu'}`}>
-        <button onClick={toggleFlex} className={`'close-bar' ${isImage ? 'closed' : 'close-bar'}`}> 
-            X
-            </button>
-            <img src={post.logo} alt='iphone' width={400} height={400} className=''/>
-       </div>
        <Link to={`/mes/${post.id}`} className="bloglink"> 
             <div className='mesFlex'>
                 <div className="mes"> 
@@ -40,7 +34,9 @@ const MessageList = ({post, length}) =>{
                     post.text : `${(post.text).slice(0,25)}...see more`
                 }
                 </p>
-                <p className="num">{length}</p>
+                <p className="num">
+                <p className="nu">{length}</p>
+                </p>
             </div>
             </div>
             </Link>

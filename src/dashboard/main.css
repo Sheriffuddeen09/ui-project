@@ -61,7 +61,7 @@
 }
 .maindashboard{
     width: 66%;
-    background-color: white;
+    background-color: var(--body_background);
     translate: 2px;
 }   
 .ulside{
@@ -76,7 +76,7 @@
     font-size: 14px;
     padding: 7px;
     margin-top: 10px;
-    color: black;
+    color: var(--body_color);
     text-decoration: none;
 }
 
@@ -84,8 +84,8 @@
     font-weight: bold;
     font-size: 14px;
     margin-top: 10px;
-    color: white;
-    background-color: black;
+    color: var(--body_color);
+    background-color: var(--body_background);
     padding: 7px;
     border: none;
     border-radius: 10px;
@@ -94,13 +94,16 @@
 .sidedashboard{
     display: flex;
     flex-direction: row;
-    background-color: white;
+    background-color: var(--body_background);
+    border: 2px solid whitesmoke;
     width: 100%;
 }
 .columnside{
     display: flex;
     flex-direction: column;
+    border: solid whitesmoke;
     translate: 180px;
+    border-width: 0px 3px 0px 0px ;
     width: 0px;
     background-color: white;
     align-items: center;
@@ -149,6 +152,7 @@
     margin-right: 90px;
     justify-content: space-between;
 }
+
 .main4{
     font-weight: bold;
     display: flex;
@@ -195,8 +199,8 @@
 }
 
 .divblack{
-    background-color: black;
-    color: white;
+    background-color: var(--body_color);
+    color: var(--body_background);
     padding: 40px;
     border-radius: 10px;
   }
@@ -389,8 +393,8 @@
 }
 .div30{
     display: inline-flex;
-    background-color: rgb(249, 245, 245);
-    margin-left: 2px;
+    background-color: var(--body_dashboard);
+    margin-left: 19px;
     margin-bottom: 10px;
     width: 117%;
 }
@@ -402,8 +406,13 @@
 }
 .div33{
     translate: -200px;
+    color: var(--body_filter);
 }
 
+.met{
+    color: var(--body_title);
+}
+.div30
 .join{
     display:flex;
     background-color: red;

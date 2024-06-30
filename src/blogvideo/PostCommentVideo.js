@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { useState } from "react"
-const PostCommentVideo = ({comment, handleComment}) =>{
+const PostCommentVideo = ({comment, handleDeletevideo}) =>{
 
     const [isVisible, setIsVisible] = useState(false)
     const [likes, setLike] = useState(true)
@@ -20,7 +20,7 @@ const PostCommentVideo = ({comment, handleComment}) =>{
             <p className="postparagr">{comment.date}</p>
             <span onClick={toggleSubmit}>
                 
-        <button className={`'button-menu' ${isVisible ? 'button-menu' : 'invisible'}`}> 
+        <button className={`'button-menu' ${isVisible ? 'button-menu' : 'invisible'}`} style={{translate:'0px'}}> 
             <div className='menu-button'> </div>
           </button>
         </span>  
@@ -33,11 +33,8 @@ const PostCommentVideo = ({comment, handleComment}) =>{
         </ul>
             </span>
             <span className={`'delete-bar' ${isVisible ? 'delete-bar' : 'button-menu'}`}>
-            <button className={`'close-bar' ${isVisible ? 'closed' : 'close-bar'}`}> 
+            <button onClick={toggleSubmit} className={`'clos-bar' ${isVisible ? 'closee' : 'clos-bar'}`}> 
             X
-            </button>
-            <button onClick={() => handleComment(comment.id)} className="deletebutton">
-                delete
             </button>
             <Link to={`/comment${comment.id}`} style={{
                 textDecoration: 'none',
@@ -46,6 +43,9 @@ const PostCommentVideo = ({comment, handleComment}) =>{
                 textAlign: 'center',
                 cursor: 'pointer'
             }}>Edit</Link>
+            <button onClick={() => handleDeletevideo(comment.id)} className="deletebuttons">
+                delete
+            </button>
             <p style={{
                 textDecoration: 'none',
                 marginTop: '10px',

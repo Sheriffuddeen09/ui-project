@@ -13,6 +13,7 @@ display: none;
 visibility: hidden;
 opacity: 1;
 }    
+.postbody
 .navHome{
 display: none;
 
@@ -2278,7 +2279,7 @@ right: 60px;
 }
 .postbody{
 min-width: 410px;
-background-color: white;
+background-color: var(--body_background);
 position: relative;
 right: 110px;
 }

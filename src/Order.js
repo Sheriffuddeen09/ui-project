@@ -5,19 +5,28 @@ import { CartContext } from './order/Features/ContextProvider'
 import { useContext } from 'react'
 import SideBar from './SideBar'
 import logo from './images/images5.png'
-const Order = ({orders}) =>{
+import FilterButtons from './FilterButton'
+import {useState} from 'react' 
+
+const Order = ({orders, setOrders}) =>{
+
+    const [isVisible, setIsVisible] = useState(false)
+
+    const toggleSubmit = () =>{
+        setIsVisible(!isVisible)
+    }
 
     const {cart} = useContext(CartContext)
     return(
-         <div className='sidebar'>
-         <div className="usersidebar">
+         <div className='sidebar *'>
+         <div className="usersidebar" >
          <div className='ordercolumn'>
         <div className='orderflex'> 
             <p className='shop'> Shopping from SheriffDev</p>
-            <span  style={{ translate: '-100px'}}> 
+            <span  style={{ translate: '-40px'}}> 
                 <Link to={'/cart'} className='linkCart'>
                 <img src={image} alt='order' height={30} width={30}  className='imageorder'/>
-                <p className='postionorder' style={{translate: '25px', marginTop: '-10px'}}>{cart.length}</p>
+                <p className='postionorder' style={{translate: '22px', marginTop: '-10px'}}>{cart.length}</p>
                 </Link>
             </span>
         </div>
@@ -32,7 +41,7 @@ const Order = ({orders}) =>{
       
          </div>
         
-         <div className='navHome' style={{
+         <div className='navHome *' style={{
              height:'230vh'
          }}>
          <div style={{
@@ -44,9 +53,8 @@ const Order = ({orders}) =>{
          translate: '50px',
          margin:'5px'
      }} alt='logo' width={40} height={40} className='im'/>
-     <p style={{
+     <p className='or' style={{
          translate: '30px',
-         color: 'blue',
          width: '20ch',
          fontWeight: 'bold'
      }}> User Page</p>
@@ -54,6 +62,13 @@ const Order = ({orders}) =>{
      <div>
          <SideBar />
          </div>
+         <div className='filterbutton'> 
+          <span style={{display:'inline-flex', gap:'10px'}} onClick={toggleSubmit}> 
+            <p> Filter-Button</p>
+            <p className={`'iconsfilter' ${isVisible ? 'iconsfilter' : 'iconfilter'}`}> ^ </p>
+          </span>
+          <span className={`hidden-box ${isVisible ? 'active' : 'hidden-box'}`}> <FilterButtons orders={orders}  setOrders={setOrders}/> </span>
+        </div>
          </div>
          </div>
     )

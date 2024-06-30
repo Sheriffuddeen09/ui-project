@@ -1,5 +1,5 @@
 import PostList from "./PostList"
-const Postmap = ({posts, handleDelete, comment}) =>{
+const Postmap = ({posts, handleDeletePost, comment}) =>{
 
 
     return (
@@ -7,7 +7,7 @@ const Postmap = ({posts, handleDelete, comment}) =>{
 
         {
             posts.map((post) =>(
-                <PostList key={post.id} post={post} comment={comment} handleDelete={handleDelete} />
+                <PostList key={post.id} post={post} comment={comment} handleDeletePost={handleDeletePost} />
             ))
         }
     </div>

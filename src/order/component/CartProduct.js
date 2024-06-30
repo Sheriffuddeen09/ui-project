@@ -18,12 +18,15 @@ const CartProduct = ({order}) =>{
             dispatch({type: "Decrease", id})
         }
     }
+
+   
     return (
 
         <div className='cartFlex'>
+            
             <img src={order.images}  alt='order' width={200} height={200} className='imagecart'/>
             <div className='cartInline'>
-            <h4 className='price'>{order.name} </h4>
+            <h4 className='price'>{order.category} </h4>
             <h4 className='price'>${order.price} </h4>
             <button className='decrease' onClick={() => Decrease(order.id)}> - </button>
             <button className='quantity'>{order.quantity} </button>

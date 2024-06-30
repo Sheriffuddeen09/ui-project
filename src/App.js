@@ -26,23 +26,27 @@ import UserIdPage from './userpage/UserIdPage'
 import { Videomap } from './userpage/Videomap'
 import LoginPage from './login/LoginPage'
 import Register from './login/Register'
+import useLocalStorage from 'use-local-storage'
 const App = () =>{
-    const [comments, setComments] = useState(JSON.parse(localStorage.getItem('commentlist')) || [])
-    const [chats, setChats] = useState(JSON.parse(localStorage.getItem('commentlist')) || [])
+    const [comments, setComments] = useState(JSON.parse(localStorage.getItem('commentslist')) || [])
+    const [titlevideo, setTitlevideo] = useState('')
+    const [commentvideos, setCommentvideos] = useState(JSON.parse(localStorage.getItem('videoslist')) || [])
     const [title, setTitle] = useState('')
     const [orders, setOrders] = useState(order)
     const [users] = useState(userList)
-    const [posts, setPosts]= useState(JSON.parse(localStorage.getItem('bloglist')) || Lists)
-    const [messages, setMessages] = useState([])
-    const [message, setMessage] = useState('')
+    const [posts, setPosts]= useState(Lists)
     const [chatme] = useState(ChatList)
     const [chatTitle, setChatTitle] = useState('')
-    const [video] = useState(JSON.parse(localStorage.getItem('videolist')) ||ListVideo)
+    const [video, setVideo] = useState(ListVideo)
     const [uservideos] = useState(Videomap)
     const [chatMessages, setChatMessages] = useState(JSON.parse(localStorage.getItem('chatlist')) || [])
     const [search, setSearch] = useState('')
     const [searchResults, setSearchResults] = useState([])
     const [isLoading, setIsLoading] = useState(false)
+
+    const preference = window.matchMedia("(prefers-color-scheme: dark)").matches
+    const [istoggle, setIsToggle] = useLocalStorage("istoggle",preference)
+
     useEffect(()=>{
     
         setIsLoading(true)
@@ -61,12 +65,6 @@ const App = () =>{
         localStorage.setItem('videolist', JSON.stringify(video))
     },[video])
 
-    const filterResult = (cartItem) =>{
-        const result = orders.filter((curData) =>{
-            return curData.category === cartItem
-        })
-        setOrders(result)
-    }
 
    useEffect(() =>{
 
@@ -76,9 +74,38 @@ const App = () =>{
     setSearchResults(BlogPostSearch)
     }, [posts, search])
 
+    const saveVideoListItem = (newposts) =>{
+        setCommentvideos(newposts)
+        localStorage.setItem('videoslist', JSON.stringify(newposts))
+    }
+    const handleVideoSubmit = (e) =>{
+        e.preventDefault()
+
+        if(!titlevideo) return 
+        VideoaddItem(titlevideo)
+        setTitlevideo('')
+    }
+    const VideoaddItem = (item) =>{
+        const date= moment().format('h:mm:ss a')
+        const id = commentvideos.length ? commentvideos[commentvideos.length - 1].id + 1 : 1
+        const video = {id,item, date}
+        const results = [...commentvideos, video]
+        saveVideoListItem(results)
+    }
+    const VideohandleDelete = async(id) =>{
+        const listItem = video.filter((post) => post.id !== id)
+        setVideo(listItem)
+        localStorage.setItem('postlist', JSON.stringify(listItem))
+    }
+    const handleDeletevideo = async(id) =>{
+        const listItem = commentvideos.filter((post) => post.id !== id)
+        setCommentvideos(listItem)
+        localStorage.setItem('videoslist', JSON.stringify(listItem))
+    }
+
     const saveListItem = (newposts) =>{
         setComments(newposts)
-        localStorage.setItem('commentlist', JSON.stringify(newposts))
+        localStorage.setItem('commentslist', JSON.stringify(newposts))
     }
     const handleSubmit = (e) =>{
         e.preventDefault()
@@ -106,12 +133,12 @@ const App = () =>{
     }
     const handleComment = async(id) =>{
         const listItem = comments.filter((comment) => comment.id !== id)
-        setPosts(listItem)
-        localStorage.setItem('commentlist', JSON.stringify(listItem))
+        setComments(listItem)
+        localStorage.setItem('commentlists', JSON.stringify(listItem))
     }
     
     const saveChatsMe = (newChats) =>{
-        setChatTitle(newChats)
+        setChatMessages(newChats)
         localStorage.setItem('chatlist', JSON.stringify(newChats))
     }
     const ChatSubmit = (e) =>{
@@ -132,49 +159,20 @@ const App = () =>{
         const listItem = chatMessages.filter((post) => post.id !== id)
         setChatMessages(listItem)
         localStorage.setItem('chatlist', JSON.stringify(listItem))
-    } 
+    }         
 
-    const MessagesaveListItem = (newposts) =>{
-        setChats(newposts)
-        localStorage.setItem('commentlist', JSON.stringify(newposts))
-    }
-    const handleMessageSubmit = (e) =>{
-        e.preventDefault()
-
-        if(!message) return 
-        MessageaddItem(message)
-        setMessage('')
-    }
-    const MessageaddItem = (item) =>{
-        const date= moment().format('h:mm:ss a')
-        const id = chats.length ? chats[chats.length - 1].id + 1 : 1
-        const messages = {id,item, date}
-        const results = [...chats, messages]
-        MessagesaveListItem(results)
-    }
-    const handleMessageDelete = async(id) =>{
-        const listItem = messages.filter((post) => post.id !== id)
-        setMessages(listItem)
-        localStorage.setItem('postlist', JSON.stringify(listItem))
-    }
-    const handleMessageComment = async(id) =>{
-        const listItem = chats.filter((comment) => comment.id !== id)
-        setMessages(listItem)
-        localStorage.setItem('commentlist', JSON.stringify(listItem))
-    }
-    
-
+   
     return(
 
-        <div>
-        <Header search={search} setSearch={setSearch} />
+        <div dark-theme={istoggle ? "dark" : "light"}>
+        <Header search={search} setSearch={setSearch} isChecked={istoggle} handleChecked={() =>setIsToggle(!istoggle)} istoggle={istoggle}/>
 
         {isLoading ? ([...Array(10).keys()].map(i =>{
             return <SkeletonPost key={i} />
       }) ) : 
       <Routes>
 
-      <Route path="/home" element={<Home filterResult={filterResult} />} />
+      <Route path="/home" element={<Home orders={orders} setOrders={setOrders}/>} />
       <Route path="/post" element={<BlogPost posts={searchResults} comment={comments.length} handleDelete={handleDelete} />} />
       <Route path="/mes" element={<MessageNow chatme={chatme} length={chatMessages.length} />} />
       <Route path="/user" element={<HomeUser users={users} userDelete={userDelete} uservideos={uservideos} comment={comments.length}/> } />
@@ -182,8 +180,8 @@ const App = () =>{
       <MessagePage chatme={chatme} ChatSubmit={ChatSubmit} ChatDelete={ChatDelete}
       chatTitle={chatTitle} setChatTitle={setChatTitle} chatMessages={chatMessages} />} />
       <Route path="/form" element={<MainForm />} />
-      <Route path="/video" element={<BlogPostVideo video={video} comment={comments.length} handleDelete={handleDelete} />} />
-      <Route path="/video/:id" element={<BlogPageVideo video={video} comments={comments} title={title} setTitle={setTitle} comment={comments.length} handleMessageDelete={handleMessageDelete} handleMessageSubmit={handleMessageSubmit} handleMessageComment={handleMessageComment} />} />
+      <Route path="/video" element={<BlogPostVideo video={video} comment={comments.length} VideohandleDelete={VideohandleDelete} />} />
+      <Route path="/video/:id" element={<BlogPageVideo video={video} commentvideos={commentvideos} titlevideo={titlevideo} setTitlevideo={setTitlevideo} comment={commentvideos.length} handleDeletevideo={handleDeletevideo} handleVideoSubmit={handleVideoSubmit} VideohandleDelete={VideohandleDelete} />} />
       <Route path="/post/:id" element={<BlogPage posts={searchResults} comments={comments} title={title} setTitle={setTitle} comment={comments.length} handleDelete={handleDelete} handleSubmit={handleSubmit} handleComment={handleComment} />} />
       <Route path="/user/:id" element={<UserIdPage users={users} comments={comments} title={title} setTitle={setTitle} comment={comments.length} userDelete={userDelete} handleSubmit={handleSubmit} handleComment={handleComment} />} />
       <Route path="/update/:id" element={ 

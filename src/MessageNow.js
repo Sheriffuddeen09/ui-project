@@ -14,16 +14,16 @@ const MessageNow = ({chatme,length}) =>{
         </div>
         <div className='navChat'>
         <div style={{
-        display: 'inline-flex',
-        translate: '30px',
+        display: 'flex',
+        flexDirection:'column',
+        translate: '50px',
     }}>
     <img src={logo} style={{
-        translate: '40px',
+        translate: '22px',
         margin:'5px'
     }} alt='logo' width={40} height={40} className='im'/>
-    <p style={{
-        translate: '50px',
-        color: 'blue',
+    <p className='met' style={{
+        translate: '22px',
         fontWeight: 'bold'
     }}> Message</p>
     </div>

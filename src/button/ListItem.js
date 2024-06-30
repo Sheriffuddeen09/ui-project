@@ -4,7 +4,7 @@ const ListItem = ({item}) =>{
     return (
 <div className="spe">
 <div className="special">
-    <div className="rates ratenot1">
+    <div className="rates ratenot1" data-aos="fade-left">
        <div className="ratt">
         <p>
         {item.title}
@@ -37,7 +37,7 @@ const ListItem = ({item}) =>{
         <button className="b1"> </button>
     </div>
 </div>
-       <div className="rates ratenot">
+       <div className="rates ratenot " data-aos="zoom-in">
        <div className="ratt">
         <p>
         {item.title}
@@ -70,7 +70,7 @@ const ListItem = ({item}) =>{
         <button className="b1"> </button>
     </div>
       </div>
-      <div className="rates">
+      <div className="rates" data-aos="fade-right">
       <div className="ratt">
         <p>
         {item.title}
@@ -105,12 +105,12 @@ const ListItem = ({item}) =>{
     </div>
     </div>
     
-        <p className="pi"> {item.body}  </p >
-        <p className="pii"> {item.paragraph} &nbsp; <p className="pi4">{item.id}</p></p>
-        <p className="piii"> {item.paragraph2} </p>
+        <p className="pi" data-aos="fade-left"> {item.body}  </p >
+        <p className="pii" data-aos="fade-right"> {item.paragraph} &nbsp; <p className="pi4">{item.id}</p></p>
+        <p className="piii" data-aos="zoom-in"> {item.paragraph2} </p>
 
-        <button className="buttsi"> Create an Account </button>
-        <p p className="pii2">Already have an account? &nbsp;<p className="pi4">Sign in</p></p>
+        <button className="buttsi" data-aos="flip-right"> Create an Account </button>
+        <p p className="pii2" data-aos="fade-right">Already have an account? &nbsp;<p className="pi4">Sign in</p></p>
     </div>
     )
 }

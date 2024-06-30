@@ -1,5 +1,5 @@
 import PostListVideo from "./PostListVideo"
-const PostmapVideo = ({video, handleDelete, comment}) =>{
+const PostmapVideo = ({video, VideohandleDelete, comment}) =>{
 
 
     return (
@@ -7,7 +7,7 @@ const PostmapVideo = ({video, handleDelete, comment}) =>{
 
         {
             video.map((post) =>(
-                <PostListVideo key={post.id} post={post} comment={comment} handleDelete={handleDelete} />
+                <PostListVideo key={post.id} post={post} comment={comment} VideohandleDelete={VideohandleDelete} />
             ))
         }
     </div>
