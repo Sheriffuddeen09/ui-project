@@ -1,152 +1,124 @@
 import moment from "moment"
-import Icon from './images/image-1.jpeg'
+import Icon from './images/gg.jpg'
+import laptop from './images/hp laptop.png'
+import imagea from './images/image-1.jpeg'
+import imageb from './images/image-2.jpeg'
+import imagec from './images/image-3.jpeg'
+import imaged from './images/images5.png'
+import iphonea from './images/iphone 13.jpg'
+import logoa from './images/Logo-1.png'
+import port from './images/ports.png'
+import ring from './images/ring.jpg'
+import themea from './images/theme 2.jpg'
+import themeb from './images/themmes.jpg'
+import trust from './images/trust in Allah.jpg'
+import ttt from './images/ttttttttttt.jpg'
+import watch from './images/watch2.jpg'
+
 export const ChatList = [
     
     {
         id: 1,
         min: moment().startOf('day').fromNow(),
         logo: Icon,
-        surname: 'Sheriffuddeen Olawale',
+        surname: 'Sheriffuddeen Ola',
         text: 'Write new message'
     },
     {
         id: 2,
         min: moment().startOf('day').fromNow(),
-        logo: Icon,
-        surname: 'Olawale Sheriffuddeen',
+        logo: laptop,
+        surname: 'Olawale Sheriff',
         text: 'Write new message'
     },
     {
         id: 3,
         min: moment().startOf('day').fromNow(),
-        logo: 'images/image-1.jpeg',
-        surname: 'Olawale Sheriffuddeen',
+        logo: imagea,
+        surname: 'Abdul-Subr Uthman',
         text: 'Write new message'
     },
     {
         id: '4',
         min: moment().startOf('day').fromNow(),
-        logo: Icon,
-        surname: 'Olawale Sheriffuddeen',
+        logo: imageb,
+        surname: 'Fatimo Ojulari',
         text: 'Write new message'
     },
     {
         id: 5,
         min: moment().startOf('day').fromNow(),
-        logo: Icon,
-        surname: 'Olawale Sheriffuddeen',
+        logo: imagec,
+        surname: 'Fatha Ramadan',
         text: 'Write new message'
     },
     {
         id: 6,
         min: moment().startOf('day').fromNow(),
-        logo: Icon,
-        surname: 'Olawale Sheriffuddeen',
+        logo: imaged,
+        surname: 'Ibrahim Olayinka',
         text: 'Write new message'
     },
     {
         id: 7,
         min: moment().startOf('day').fromNow(),
-        logo: 'images/Logo-1.png',
-        surname: 'Olawale Sheriffuddeen',
+        logo: iphonea,
+        surname: 'Abdul-Razziq Idun',
         text: 'Write new message'
     },
     {
         id: 8,
         min: moment().startOf('day').fromNow(),
-        logo: 'images/Logo-1.png',
-        surname: 'Olawale Sheriffuddeen',
+        logo: ring,
+        surname: 'Yusuf Ibrahim',
         text: 'Write new message'
     },
     {
         id: 9,
         min: moment().startOf('day').fromNow(),
-        logo: 'images/Logo-1.png',
-        surname: 'Olawale Sheriffuddeen',
+        logo: logoa,
+        surname: 'Aishat Muftau',
         text: 'Write new message'
     },
     {
         id: 10,
         min: moment().startOf('day').fromNow(),
-        logo: 'images/Logo-1.png',
-        surname: 'Olawale Sheriffuddeen',
+        logo: port,
+        surname: 'Isaa Muhammad',
         text: 'Write new message'
     },
     {
         id: 11,
         min: moment().startOf('day').fromNow(),
-        logo: 'images/Logo-1.png',
-        surname: 'Olawale Sheriffuddeen',
+        logo: themea,
+        surname: 'Olawale AbdulAllah',
         text: 'Write new message'
     },
     {
         id: 12,
         min: moment().startOf('day').fromNow(),
-        logo: 'images/Logo-1.png',
+        logo: themeb,
         surname: 'Olawale Sheriffuddeen',
         text: 'Write new message'
     },
     {
         id: 13,
         min: moment().startOf('day').fromNow(),
-        logo: 'images/Logo-1.png',
-        surname: 'Olawale Sheriffuddeen',
+        logo: ttt,
+        surname: 'Dhulaikh Ibrahim',
         text: 'Write new message'
     },
     {
         id: 14,
         min: moment().startOf('day').fromNow(),
-        logo: 'images/Logo-1.png',
-        surname: 'Olawale Sheriffuddeen',
+        logo: watch,
+        surname: 'Humainah Sharaf',
         text: 'Write new message'
     },
     {
         id: 15,
         min: moment().startOf('day').fromNow(),
-        logo: 'images/Logo-1.png',
-        surname: 'Olawale Sheriffuddeen',
+        logo: trust,
+        surname: 'Qudus Olayinka',
         text: 'Write new message'
-    },
-    {
-        id: 16,
-        min: moment().startOf('day').fromNow(),
-        logo: 'images/Logo-1.png',
-        surname: 'Olawale Sheriffuddeen',
-        text: 'Write new message'
-    },
-    {
-        id: 17,
-        min: moment().startOf('day').fromNow(),
-        logo: 'images/Logo-1.png',
-        surname: 'Olawale Sheriffuddeen',
-        text: 'Write new message'
-    },
-    {
-        id: 18,
-        min: moment().startOf('day').fromNow(),
-        logo: 'images/Logo-1.png',
-        surname: 'Olawale Sheriffuddeen',
-        text: 'Write new message'
-    },
-    {
-        id: 19,
-        min: moment().startOf('day').fromNow(),
-        logo: 'images/Logo-1.png',
-        surname: 'Olawale Sheriffuddeen',
-        text: 'Write new message'
-    },
-    {
-        id: 20,
-        min: moment().startOf('day').fromNow(),
-        logo: Icon,
-        surname: 'Olawale Sheriffuddeen',
-        text: 'Write new message'
-    },
-    {
-        id: 21,
-        min: moment().startOf('day').fromNow(),
-        logo: Icon,
-        surname: 'Olawale Sheriffuddeen',
-        text: 'Write new message'
-    }
-]
+    }]

@@ -4,7 +4,6 @@ import { useState } from "react"
 import 'react-html5video/dist/styles.css'
 import {DefaultPlayer as Video} from 'react-html5video'
 import { FacebookShareButton, WhatsappShareButton, TwitterShareButton, LinkedinShareButton,TelegramShareButton, EmailShareButton, FacebookIcon, WhatsappIcon, TwitterIcon, TelegramIcon, LinkedinIcon, EmailIcon } from "react-share";
-import thum from './images/image-1.jpeg'
 const PostListVideo = ({post, videohandleDelete, comment}) =>{
 
     const [isVisible, setIsVisible] = useState(false)
@@ -92,7 +91,7 @@ const PostListVideo = ({post, videohandleDelete, comment}) =>{
             <Video loop style={{width: '700px',
                             
 }}
-            poster={thum} onCanPlayThrough={() => console.log('video')} className="blogimg blogimgvideo ">
+           onCanPlayThrough={() => console.log('video')} className="blogimg blogimgvideo ">
                 <source src={post.icon} type="video/webm" width={400} height={400} />
             </Video>
          </span>

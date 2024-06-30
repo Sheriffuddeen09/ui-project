@@ -33,7 +33,7 @@ const PostList = ({post, handleDeletePost, comment}) =>{
         <div className='mediapost'>
             
             <div className='postflex mediaflex'>
-                <img src={post.image} alt='iphone' width={30} height={30} className='postim postimmedia'/>
+                <img src={post.logo} alt='iphone' width={30} height={30} className='postim postimmedia'/>
             <div className='div27b'>
             <p className="linecount" style={{width:'100ch'}}>
                 {post.title}
@@ -93,13 +93,13 @@ const PostList = ({post, handleDeletePost, comment}) =>{
         </div>
         <div className={`disablemenu ${isVisible ? 'disablemenu' : 'visible'}`} >
         <span onClick={toggleFlex} className='moveimgpost'>
-            <img src={post.logo} alt='phone' height={400} width={600} className="blogimg blogimgpost"/>
+            <img src={post.image} alt='phone' height={500} width={600} className="blogimg blogimgpost"/>
          </span>
         <div className={`'menu-image' ${isImage ? 'menu-image' : 'button-menu'}`}>
         <button onClick={toggleFlex} className={`'close-bar' ${isImage ? 'closed' : 'close-bar'}`}> 
             X
             </button>
-        <img src={post.logo} alt='phone' height={400} width={400} className="blogflex"/>
+        <img src={post.image} alt='phone' height={500} width={400} className="blogflex"/>
         <span className="limoves">
         <button className="btn-slex" ><Link style={{
             textDecoration: 'none'

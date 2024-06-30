@@ -41,7 +41,7 @@ const BlogPage = ({posts, handleDelete, comment, handleComment, handleSubmit, ti
             translate:'140px'
         }}>        
             <div className='postflexing allflexpost'>
-                <img src={post.image} alt='iphone' width={30} height={30} className='postIma'/>
+                <img src={post.logo} alt='iphone' width={30} height={30} className='postIma'/>
             <div className='div27'>
             <p className='linecount lineblog' style={{width:'100ch'}}>
                 {post.title}
@@ -80,13 +80,13 @@ const BlogPage = ({posts, handleDelete, comment, handleComment, handleSubmit, ti
             {post.name}
             </p>
             <span onClick={toggleFlex} className='moveimpost'>
-            <img src={post.logo} alt='phone' height={400} width={600} className="blogimg blogimgpost"/>
+            <img src={post.image} alt='phone' height={500} width={600} className="blogimg blogimgpost"/>
             </span>
             <div className={`'menu-image' ${isImage ? 'menu-image' : 'button-menu'}`}>
         <button onClick={toggleFlex} className={`'close-bar' ${isImage ? 'closed' : 'close-bar'}`}> 
             X
             </button>
-        <img src={post.logo} alt='phone' height={400} width={400} className="blogflex"/>
+        <img src={post.image} alt='phone' height={400} width={400} className="blogflex"/>
        </div>
        <div className='moveline'>
         <span className='buttonicon buttoniconpost'>

@@ -1,175 +1,143 @@
 import moment from "moment"
 import Image from './images/useStatevideo.mp4'
 import Images from './images/editVideo.mp4'
-import Logs from './images/image-1.jpeg'
+
+
+import Icon from './images/gg.jpg'
+import laptop from './images/hp laptop.png'
+import imagea from './images/image-1.jpeg'
+import imageb from './images/image-2.jpeg'
+import imagec from './images/image-3.jpeg'
+import imaged from './images/images5.png'
+import iphonea from './images/iphone 13.jpg'
+import logoa from './images/Logo-1.png'
+import port from './images/ports.png'
+import ring from './images/ring.jpg'
+import themea from './images/theme 2.jpg'
+import themeb from './images/themmes.jpg'
+import trust from './images/trust in Allah.jpg'
+import ttt from './images/ttttttttttt.jpg'
+import watch from './images/watch2.jpg'
 export const ListVideo = [
     
     {
         id: 1,
         date: moment().startOf('day').fromNow(),
         icon: Images,
-        logo: Logs,
+        logo: Icon,
         name: 'shipment product at low price is available in Shipment SheriffDev 1',
-        title: 'olawale Sheriff'
+        title: 'Olawale Sheriff'
     },
     {
         id: 2,
-        logo: Logs,
+        logo: imagea,
         date: moment().startOf('day').fromNow(),
         icon: Image,
         name: 'shipment at low price is available in Shipment SheriffDev',
-        title: 'olawale Sheriff'
+        title: 'Sherifuddeen Ola'
     },
     {
         id: 3,
-        logo: Logs,
+        logo: imageb,
         date: moment().startOf('day').fromNow(),
         icon: 'images/image-1.jpeg',
         name: 'shipment at low price is available in Shipment SheriffDev',
-        title: 'olawale Sheriff'
+        title: 'Abdul-Salam Opeyemi'
     },
     {
         id: '4',
-        logo: Logs,
+        logo: imagec,
         date: moment().startOf('day').fromNow(),
         icon: Image,
         name: 'product shipment at low price is available in Shipment SheriffDev',
-        title: 'olawale Sheriff'
+        title: 'Abdul-Subr Uthman'
     },
     {
         id: 5,
-        logo: Logs,
+        logo: imaged,
         date: moment().startOf('day').fromNow(),
         icon: Image,
         name: 'shipment at low price is available in Shipment SheriffDev',
-        title: 'olawale Sheriff'
+        title: 'Fatimo Ojulari'
     },
     {
         id: 6,
-        logo: Logs,
+        logo: ring,
         date: moment().startOf('day').fromNow(),
         icon: Image,
         name: 'shipment at low price is available in Shipment SheriffDev',
-        title: 'olawale Sheriff'
+        title: 'Fatha Ramadan'
     },
     {
         id: 7,
-        logo: Logs,
+        logo: iphonea,
         date: moment().startOf('day').fromNow(),
         icon: 'images/Logo-1.png',
         name: 'shipment at low price is available in Shipment SheriffDev',
-        title: 'olawale Sheriff'
+        title: 'Ibrahim Olayinka'
     },
     {
         id: 8,
-        logo: Logs,
+        logo: watch,
         date: moment().startOf('day').fromNow(),
         icon: 'images/Logo-1.png',
         name: 'shipment at low price is available in Shipment SheriffDev',
-        title: 'olawale Sheriff'
+        title: 'Abdul-Razziq Idun'
     },
     {
         id: 9,
-        logo: Logs,
+        logo: themea,
         date: moment().startOf('day').fromNow(),
         icon: 'images/Logo-1.png',
         name: 'shipment at low price is available in Shipment SheriffDev',
-        title: 'olawale Sheriff'
+        title: 'Yusuf Ibrahim'
     },
     {
         id: 10,
-        logo: Logs,
+        logo: themeb,
         date: moment().startOf('day').fromNow(),
         icon: 'images/Logo-1.png',
         name: 'shipment at low price is available in Shipment SheriffDev',
-        title: 'olawale Sheriff'
+        title: 'Aishat Muftau'
     },
     {
         id: 11,
-        logo: Logs,
+        logo: port,
         date: moment().startOf('day').fromNow(),
         icon: 'images/Logo-1.png',
         name: 'shipment at low price is available in Shipment SheriffDev',
-        title: 'olawale Sheriff'
+        title: 'Isaa Muhammad'
     },
     {
         id: 12,
-        logo: Logs,
+        logo: trust,
         date: moment().startOf('day').fromNow(),
         icon: 'images/Logo-1.png',
         name: 'shipment at low price is available in Shipment SheriffDev',
-        title: 'olawale Sheriff'
+        title: 'Olawale AbdulAllah'
     },
     {
         id: 13,
-        logo: Logs,
+        logo: ttt,
         date: moment().startOf('day').fromNow(),
         icon: 'images/Logo-1.png',
         name: 'shipment at low price is available in Shipment SheriffDev',
-        title: 'olawale Sheriff'
+        title: 'Dhulaikh Ibrahim'
     },
     {
         id: 14,
-        logo: Logs,
+        logo: logoa,
         date: moment().startOf('day').fromNow(),
         icon: 'images/Logo-1.png',
         name: 'shipment at low price is available in Shipment SheriffDev',
-        title: 'olawale Sheriff'
+        title: 'Humainah Sharaf'
     },
     {
         id: 15,
-        logo: Logs,
+        logo: laptop,
         date: moment().startOf('day').fromNow(),
         icon: 'images/Logo-1.png',
         name: 'shipment at low price is available in Shipment SheriffDev',
-        title: 'olawale Sheriff'
-    },
-    {
-        id: 16,
-        logo: Logs,
-        date: moment().startOf('day').fromNow(),
-        icon: 'images/Logo-1.png',
-        name: 'shipment at low price is available in Shipment SheriffDev',
-        title: 'olawale Sheriff'
-    },
-    {
-        id: 17,
-        logo: Logs,
-        date: moment().startOf('day').fromNow(),
-        icon: 'images/Logo-1.png',
-        name: 'shipment at low price is available in Shipment SheriffDev',
-        title: 'olawale Sheriff'
-    },
-    {
-        id: 18,
-        logo: Logs,
-        date: moment().startOf('day').fromNow(),
-        icon: 'images/Logo-1.png',
-        name: 'shipment at low price is available in Shipment SheriffDev',
-        title: 'olawale Sheriff'
-    },
-    {
-        id: 19,
-        logo: Logs,
-        date: moment().startOf('day').fromNow(),
-        icon: 'images/Logo-1.png',
-        name: 'shipment at low price is available in Shipment SheriffDev',
-        title: 'olawale Sheriff'
-    },
-    {
-        id: 20,
-        logo: Logs,
-        date: moment().startOf('day').fromNow(),
-        icon: Image,
-        name: 'shipment at low price is available in Shipment SheriffDev',
-        title: 'olawale Sheriff'
-    },
-    {
-        id: 21,
-        logo: Logs,
-        date: moment().startOf('day').fromNow(),
-        icon: Image,
-        name: 'shipment at low price is available in Shipment SheriffDev',
-        title: 'olawale Sheriff'
+        title: 'Qudus Olayinka'
     }
 ]
