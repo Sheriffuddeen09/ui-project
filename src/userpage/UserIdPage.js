@@ -33,7 +33,7 @@ const UserIdPage = ({users, userDelete, comment, handleComment, handleSubmit, ti
     }
 
     return(
-        <div className='postbody'>
+        <div className='postbo'>
         {post &&
         <>        
             <div className='postflexing'>
@@ -48,7 +48,7 @@ const UserIdPage = ({users, userDelete, comment, handleComment, handleSubmit, ti
             </div>
         <div className='menu-me' onClick={toggleSubmit}>
         <span>
-        <button className={`'button-bar' ${isVisible ? 'button-bar' : 'invision'}`}> 
+        <button className={`'button-bar' ${isVisible ? 'button-bar' : 'invision'}`} style={{backgroundColor:'whitesmoke', height:'30px'}}> 
             <div className='menu-button'> </div>
           </button>
         </span>   
@@ -72,7 +72,7 @@ const UserIdPage = ({users, userDelete, comment, handleComment, handleSubmit, ti
         <button onClick={() => userDelete(post.id)} className='deletebutton'>x</button>
         </div>
             </div>
-            <p className='bloglink'> 
+            <p className='pte'> 
             {post.userTitle}
             </p>
             <span onClick={toggleFlex}>

@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom'
 import Product from './order/component/Product'
 import { CartContext } from './order/Features/ContextProvider'
 import { useContext } from 'react'
-import SideBar from './SideBar'
 import logo from './images/images5.png'
 import FilterButtons from './FilterButton'
 import {useState} from 'react' 
+import SideBarOrder from './order/component/SideBarOrder'
+import Footer from './dashboard/Footer'
 
 const Order = ({orders, setOrders}) =>{
 
@@ -18,8 +19,8 @@ const Order = ({orders, setOrders}) =>{
 
     const {cart} = useContext(CartContext)
     return(
-         <div className='sidebar *'>
-         <div className="usersidebar" >
+    <div className='sidebar *'>
+    <div className="usersidebar" >
          <div className='ordercolumn'>
         <div className='orderflex'> 
             <p className='shop'> Shopping from SheriffDev</p>
@@ -39,9 +40,7 @@ const Order = ({orders, setOrders}) =>{
             </div>
         </div>
       
-         </div>
-        
-         <div className='navHome *' style={{
+         <div className='navChat *' style={{
              height:'230vh'
          }}>
          <div style={{
@@ -60,17 +59,20 @@ const Order = ({orders, setOrders}) =>{
      }}> User Page</p>
      </div>
      <div>
-         <SideBar />
+         <SideBarOrder />
          </div>
-         <div className='filterbutton'> 
+         <div className='filterbutton' style={{translate:'120px'}}> 
           <span style={{display:'inline-flex', gap:'10px'}} onClick={toggleSubmit}> 
             <p> Filter-Button</p>
             <p className={`'iconsfilter' ${isVisible ? 'iconsfilter' : 'iconfilter'}`}> ^ </p>
           </span>
           <span className={`hidden-box ${isVisible ? 'active' : 'hidden-box'}`}> <FilterButtons orders={orders}  setOrders={setOrders}/> </span>
         </div>
-         </div>
-         </div>
-    )
+        <div style={{translate:'-100px'}}>
+        <Footer />
+        </div>
+</div>
+</div>
+</div>)
 }
 export default Order

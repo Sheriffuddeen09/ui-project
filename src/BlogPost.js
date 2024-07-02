@@ -2,12 +2,17 @@ import Postmap from "./blogpost/Postmap"
 import logo from './images/images5.png'
 import Footer from "./dashboard/Footer"
 import SideBar from "./SideBar"
+import SliderPost from "./blogpost/SliderPost"
+
 const BlogPost = ({handleDeletePost, posts, comment}) =>{
     
     return(
 
         <div className='sidebar' style={{overflow:'hidden'}}>
         <div className="home">
+        <div className="postslidee" style={{width:'93%', translate:'8px', padding:'10px', color:'white', height:'220px'}}>
+            <SliderPost />
+        </div>
         <div className="div22">
         <Postmap posts={posts} comment={comment} handleDeletePost={handleDeletePost}/>
         </div>

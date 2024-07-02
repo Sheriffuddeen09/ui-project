@@ -4,12 +4,12 @@
     align-items: center;
     flex-direction: row ;
     margin: 10px 20px;
+    flex-wrap: wrap;
 }
 
 .ordercolumn{
     background-color: var(--body_background);
     display: flex;
-    height: 170vh;
     flex-direction: column;
 }
 .product{
@@ -18,6 +18,17 @@
     flex-wrap: wrap;
     align-items: center;
     color: var(--body_order);
+}
+.displaylist{
+    display: grid;
+   grid-template-columns: repeat(3, 3fr);
+   grid-auto-rows: minmax(100px, auto);
+   text-align: center;
+   width: 0px;
+   gap: 10px;
+   margin-top: 10px;
+   font-weight: bold;
+   background-color: wheat;
 }
 .imageorder{
     transform: translateY(18px);
@@ -28,8 +39,9 @@
 }
 .order{
     padding: 15px;
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
     gap: 10px;
 }
 .cartbutton{
@@ -39,6 +51,7 @@
     width: 150px;
     transition: all 2s ease-in-out;
     border: none;
+    position: relative;
 }
 .cartbutton:hover{
     background-color: black;
@@ -136,6 +149,79 @@
     width: 20ch;
     cursor: pointer;
 }
+.postslidee{
+    background-color: rgb(212, 212, 212);
+    height: 230px;
+}
+.postslide{
+    background-color: var(--body_post);
+    margin-top: -5px;
+    margin-bottom: 5px;
+    height: 220px;
+}
+.imapad{
+    padding: 7px;
+}
+.imalist{
+    border-radius: 10px;
+    border: 2px solid whitesmoke;
+}
+.shortimg{
+    border-radius: 100%;
+    border: 2px solid blue;
+    position: relative;
+    top: -5px;
+    z-index: 1;
+    left: -135px;
+}
+.speima{
+    background-color: white;
+    padding: 1px;
+}
+.sliderorder{
+    padding: 10px;
+    background-color: orange;
+    margin-left: 3px;
+    width: 76%;
+}
+.movetop{
+    transform: translateY(-1250px);
+
+}
+.amo{
+    color: white;
+    background-color: blue;
+    height: 20px;
+    width: 22px;
+    border-radius: 4px;
+    position: absolute;
+    top: -2px;
+    left: 120px;
+    text-align: center;
+}
+.shift{
+    position: relative;
+    left: 50px;
+    color: var(--body_color);
+    font-weight: bold;
+    top: -50px;
+}
+.shifts{
+    position: relative;
+    left: 50px;
+    color: var(--body_color);
+    font-weight: bold;
+}
+.container{
+    background-color: black;
+    min-width: 200px;
+    height: 100px;
+}
+.columnorders{
+    height: 100vh;
+    background-color: rgb(211, 45, 45);
+}
+
 .iconsfilter{
     rotate: 360deg;
     translate: -5px; position: relative;

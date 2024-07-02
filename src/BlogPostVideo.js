@@ -2,12 +2,16 @@ import PostmapVideo from "./blogvideo/PostmapVideo"
 import logo from './images/images5.png'
 import SideBar from "./SideBar"
 import Footer from "./dashboard/Footer"
+import SliderPost from "./blogpost/SliderPost"
 const BlogPostVideo = ({videohandleDelete, video, comment}) =>{
     
     return(
 
         <div className='sidebar' >
         <div className="home">
+            <div className="postslidee" style={{ width:'93%', translate:'8px', padding:'10px', color:'white', height:'220px'}}>
+                <SliderPost />
+            </div>
         <div className="div22">
         <PostmapVideo video={video} comment={comment} videohandleDelete={videohandleDelete}/>
         </div>

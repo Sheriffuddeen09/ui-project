@@ -44,18 +44,19 @@ const UserMap = ({post, userDelete,comment}) =>{
             </div>
             <div className='menu-menu'>
         <span>
-        <button onClick={toggleSubmit} className={`'button-bar' ${isVisible ? 'button-bar' : 'invision'}`}> 
+        <button onClick={toggleSubmit} className={`'button-bar' ${isVisible ? 'button-bar' : 'invision'}`} style={{backgroundColor:'whitesmoke', height:'30px', position:'relative', top:'-10px', left:'290px'}}> 
             <div className='menu-button'> </div>
           </button>
         </span>   
-        <button onClick={() => userDelete(post.id)} className="deletebutton">
+        <button onClick={() => userDelete(post.id)} className="deletebutton" style={{position:'relative', top:'-20px', left:'300px'}}>
                 X
             </button>
             </div>
         </div>
        
         <div className='postba'>  
-        <Link to={`/user/${post.id}`} className="bloglink"> 
+        
+        <Link to={`/user/${post.id}`} className="pte"> 
                 {
                     (post.userTitle).length <= 30 ?
                     post.userTitle : `${(post.userTitle).slice(0,25)}...see more`

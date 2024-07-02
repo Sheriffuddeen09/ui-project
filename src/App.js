@@ -13,7 +13,6 @@ import { useState, useEffect } from "react"
 import EditPost from './blogpost/EditPost'
 import BlogPageVideo from './blogvideo/BlogPageVideo'
 import BlogPostVideo from './BlogPostVideo'
-import Order from './Order'
 import HomeDashboard from './dashboard/Home'
 import Cart from './order/Page/Cart'
 import MessageNow from './MessageNow'
@@ -27,6 +26,8 @@ import { Videomap } from './userpage/Videomap'
 import LoginPage from './login/LoginPage'
 import Register from './login/Register'
 import useLocalStorage from 'use-local-storage'
+import ListOrder from './order/component/ListOrder'
+import OrderElement from './OrderElement'
 const App = () =>{
     const [comments, setComments] = useState(JSON.parse(localStorage.getItem('commentslist')) || [])
     const [titlevideo, setTitlevideo] = useState('')
@@ -189,11 +190,12 @@ const App = () =>{
                 <EditPost key={post.id} post={post} posts={posts} setPosts={setPosts}/>
             ))
         } />
-        <Route path="/order" element={ <Order orders={orders} setOrders={setOrders}/>} />
+        <Route path="/order" element={ <OrderElement orders={orders} setOrders={setOrders}/>} />
         <Route path="/" element={ <LoginPage/>} />
         <Route path="/register" element={ <Register />} />
         <Route path="/cart" element={ <Cart />} />
         <Route path="/dashboard" element={ <HomeDashboard />} />
+        <Route path="/about" element={ <ListOrder />} />
       </Routes>
 
     }

@@ -1,5 +1,6 @@
 import React, {useContext} from 'react'
 import { CartContext } from '../Features/ContextProvider'
+
 const Product = ({order}) =>{
 
     const {dispatch} = useContext(CartContext)
@@ -11,6 +12,7 @@ const Product = ({order}) =>{
                 <p> ${order.price}</p>
                 <button className="cartbutton" onClick={() => dispatch({type:"Add", order:order})}> Add To Cart</button>
             </div>
+
         </div>
     )
 }

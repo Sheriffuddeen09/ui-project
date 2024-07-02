@@ -3,11 +3,11 @@ body{
     display: flex;
     flex-flow: column nowrap;
 }
-gobuttonform
+
 .section{
-    background-color: white;
+    background-color: var(--body_form);
     margin: -40px auto;
-    color: black;
+    color: var(--body_orderf);
     width: 40%;
     display: flex;
     height: 115vh;
@@ -16,7 +16,11 @@ gobuttonform
     font-size: 20px;
     font-weight: bold;
 }
+.formsection{
 
+    background-color: var(--body_background);
+    padding: 4px;
+}
 .input1{
     padding: 10px;
     border: 2px solid rgb(64, 64, 66);
@@ -36,13 +40,19 @@ gobuttonform
  }
  .label1{
     translate: 40px;
+    font-size: 20px;
+    color: var(--body_orderf);
+    margin-top: 20px;
  }
  .label3{
     translate: 90px;
     margin-bottom: 10px;
  }
  .label2{
-    translate: 30px;
+    translate: 30px; 
+    font-size: 20px;
+    color: var(--body_orderf);
+    margin-top: 20px;
  }
 .input2{
     padding: 10px;
@@ -108,7 +118,7 @@ gobuttonform
 .button:disabled{
     background-color: rgb(107, 107, 107);
     color: white;
-    transform: translateY(-10px);
+    transform: translateY(1px);
 }
 input:disabled{
     background-color: rgb(107, 107, 107);
@@ -126,17 +136,29 @@ input:invalid{
 }
 .ship{
     display: inline-flex;
-    margin-top: -35px;
+    margin-top: 5px;
 }
 .pay{
     translate: 30px;
-    margin-top: -23px;
+    margin-top: -3px;
 }
 .check{
-    height: 15px;
-    width: 15px;
+    height: 25px;
+    width: 25px;
     translate: 20px;
     margin-top: 25px;
+    padding: 30px;
+    border-radius: 20px;
+}
+.check1{
+    height: 25px;
+    width: 25px;
+    translate: -5px;
+    margin-top: 25px;
+    margin-bottom: -20px;
+    padding: 30px;
+    position: relative;
+    top: 25px;
     border-radius: 20px;
 }
 .remove{
@@ -161,7 +183,7 @@ input:invalid{
     justify-content: space-around;
     align-items: center;
     position: relative;
-    background-color: black;
+    background-color: var(--body_step);
     padding: 15px;
 }
 .step{
@@ -234,5 +256,5 @@ progress::after{
     translate: 380px;
     cursor: pointer;
     margin-top: 20px;
-    transform: translateY(35px);
+    transform: translateY(65px);
 }

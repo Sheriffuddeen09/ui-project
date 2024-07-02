@@ -28,11 +28,11 @@ const UserListVideo = ({post, handleDelete, comment}) =>{
 
     return(
         <div>
-        <div className=''>
+        <div className='postbody'>
             
-            <div className='postflex'>
+            <div className='postflex' style={{translate:'20px'}}>
                 <img src={post.userlogo} alt='iphone' width={30} height={30} className='postim'/>
-            <div className='div27'>
+            <div className='div27b'>
             <p>
                 {post.usertitle}
             </p>
@@ -42,18 +42,18 @@ const UserListVideo = ({post, handleDelete, comment}) =>{
             </div>
         <div className='menu-me'>
         <span>
-        <button onClick={toggleSubmit} className={`'button-bar' ${isVisible ? 'button-bar' : 'invision'}`}> 
+        <button onClick={toggleSubmit} className={`'button-bar' ${isVisible ? 'button-bar' : 'invision'}`} style={{backgroundColor:'whitesmoke', height:'30px', position:'relative', top:'-10px', left:'-40px'}}> 
             <div className='menu-button'> </div>
           </button>
         </span>   
-        <button onClick={() => handleDelete(post.id)} className="deletebutton">
+        <button onClick={() => handleDelete(post.id)} className="deletebutton" style={{position:'relative', top:'-15px', right:'50px'}}>
                 X
             </button>
         <div className='postba'>
         </div>
         </div>
             </div>
-            <Link to={`/video/${post.id}`} className="bloglink"> 
+            <Link to={`/video/${post.id}`} className="pte" style={{translate:'70px'}}> 
                 {
                     (post.username).length <= 30 ?
                     post.username : `${(post.username).slice(0,25)}...see more`
@@ -87,10 +87,8 @@ const UserListVideo = ({post, handleDelete, comment}) =>{
             
         </div>
         <span>
-            <Video loop style={{width: '700px',
-                            
-}}
-            poster={thum} onCanPlayThrough={() => console.log('video')} className="blogimg">
+            <Video loop
+            poster={thum} onCanPlayThrough={() => console.log('video')} className="blogimg" style={{translate:'0px'}} width={400}>
                 <source src={post.usericon} type="video/webm" width={400} height={400} />
             </Video>
          </span>

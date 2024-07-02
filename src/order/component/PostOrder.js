@@ -1,10 +1,21 @@
 import './order.css'
-import Icon from './images/Logo-1.png'
-import Logs from './images/Logo-2.jpeg'
+import Icon from './product/cpu.png'
+import apple from './product/apple-iphone-12.jpg'
+import blue from './product/bluetooth.jpg'
+import dell from './product/dell.jpg'
+import jeana from './product/jeans3.jpg'
+import sst from './product/sst.jpg'
+
+import Icons from './product/iphone 11.jpg'
+import apples from './product/iphone 13.jpg'
+import blues from './product/jeans2.png'
+import dells from './product/watch.jpg'
+import jeanas from './product/ring.jpg'
+import ssts from './product/tele.webp'
 export const order = [
     {
         price: '5000',
-        images: Logs,
+        images: Icon,
         id: 1,
         quantity: 1,
         category:'iphone'
@@ -12,7 +23,7 @@ export const order = [
     },
     {
         price: '4000',
-        images: Logs,
+        images: apple,
         id: 2,
         quantity: 1,
         category:'shoe'
@@ -20,14 +31,14 @@ export const order = [
     },
     {
         price: '8000',
-        images: Icon,
+        images: blue,
         id: 3,
         quantity: 1,
         category:'watch'
     },
     {
         price: '200000',
-        images: Logs,
+        images: dell,
         id: 4,
         category:'iphone',
         quantity: 1
@@ -35,7 +46,7 @@ export const order = [
     },
     {
         price: '10000',
-        images: Icon,
+        images: sst,
         id: 5, 
         category:'electronic',
         quantity: 1
@@ -43,7 +54,58 @@ export const order = [
     },
     {
         price: '1000',
-        images: Icon,
+        images: jeana,
+        id: 6, 
+        category:'jewelry',
+        quantity: 1
+        
+    }
+]
+
+
+export const orderlists = [
+    {
+        price: '15000',
+        product: Icons,
+        id: 1,
+        quantity: 1,
+        category:'iphone'
+
+    },
+    {
+        price: '11000',
+        product: apples,
+        id: 2,
+        quantity: 1,
+        category:'shoe'
+        
+    },
+    {
+        price: '5500',
+        product: blues,
+        id: 3,
+        quantity: 1,
+        category:'watch'
+    },
+    {
+        price: '250000',
+        product: dells,
+        id: 4,
+        category:'iphone',
+        quantity: 1
+        
+    },
+    {
+        price: '100000',
+        product: ssts,
+        id: 5, 
+        category:'electronic',
+        quantity: 1
+        
+    },
+    {
+        price: '15000',
+        product: jeanas,
         id: 6, 
         category:'jewelry',
         quantity: 1

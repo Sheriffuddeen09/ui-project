@@ -5,7 +5,7 @@ import { FormProvider } from "./context/FormContext"
 const MainForm = () =>{
 
     return (
-        <div>
+        <div className="formsection">
         <FormProvider>
         <Progress/>
         <Form />

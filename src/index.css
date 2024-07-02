@@ -1,8 +1,6 @@
 body{
   background-color: var(--body_background);
-  height: 200vh;
 }
-
 .div2{
   display: flex;
   flex-direction: row;
@@ -1621,6 +1619,7 @@ sece
 
 :root{
   --body_background: white;
+  --body_post: white;
   --body_color: black;
   --link_color: navy;
   --body_title:blue;
@@ -1638,11 +1637,14 @@ sece
   --body_toggle: rgb(11, 10, 10);
   --body_togglef: white;
   --body_nav: rgb(118, 117, 227);
+  --body_step: black;
+  --body_form: #17191c;
 }
 
 [dark-theme="dark"]{
   --body_dashboard: #17191c;
   --body_background: #17191c;
+  --body_post: #17191c;
   --body_color: white;
   --body_toggle: white;
   --body_togglef: black;
@@ -1657,6 +1659,8 @@ sece
   --body_order:white;
   --body_orderf: black;
   --body_orders: rgb(163, 163, 163);
+  --body_form: white;
+  --body_step: blue;
 
 }
 .flexnav{
