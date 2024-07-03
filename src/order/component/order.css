@@ -1,3 +1,15 @@
+.menu-imageorder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0.8);
+    width: 1300px;
+    translate: -140px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+  }
 .orderflex{
     display: flex;
     justify-content: space-between;
@@ -52,6 +64,19 @@
     transition: all 2s ease-in-out;
     border: none;
     position: relative;
+}
+.orderimage{
+    visibility: hidden;
+    opacity: 0;
+}
+.ordertrace{
+    translate: 70px;
+}
+.caption{
+    color: black;
+    font-size: 30px;
+    width: 40ch;
+    margin-top: 30px;
 }
 .cartbutton:hover{
     background-color: black;
@@ -162,6 +187,15 @@
 .imapad{
     padding: 7px;
 }
+.productpage{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--body_order);
+}
 .imalist{
     border-radius: 10px;
     border: 2px solid whitesmoke;
@@ -172,7 +206,7 @@
     position: relative;
     top: -5px;
     z-index: 1;
-    left: -135px;
+    left: -140px;
 }
 .speima{
     background-color: white;
@@ -202,9 +236,9 @@
 .shift{
     position: relative;
     left: 50px;
-    color: var(--body_color);
+    color: rgb(16, 16, 198);
     font-weight: bold;
-    top: -50px;
+    top: -40px;
 }
 .shifts{
     position: relative;

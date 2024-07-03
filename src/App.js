@@ -28,6 +28,7 @@ import Register from './login/Register'
 import useLocalStorage from 'use-local-storage'
 import ListOrder from './order/component/ListOrder'
 import OrderElement from './OrderElement'
+import OrderPage from './order/component/OrderPage'
 const App = () =>{
     const [comments, setComments] = useState(JSON.parse(localStorage.getItem('commentslist')) || [])
     const [titlevideo, setTitlevideo] = useState('')
@@ -191,6 +192,7 @@ const App = () =>{
             ))
         } />
         <Route path="/order" element={ <OrderElement orders={orders} setOrders={setOrders}/>} />
+        <Route path="/order/:id" element={ <OrderPage />} />
         <Route path="/" element={ <LoginPage/>} />
         <Route path="/register" element={ <Register />} />
         <Route path="/cart" element={ <Cart />} />

@@ -1,6 +1,9 @@
 import { CartContext } from '../Features/ContextProvider'
 import React, {useContext} from 'react'
 import { orderlists } from "./PostOrder"
+import { Link } from 'react-router-dom'
+
+
 const Text = () =>{
 
 const {dispatch} = useContext(CartContext)
@@ -10,9 +13,9 @@ const {dispatch} = useContext(CartContext)
             {
                 orderlists.map((order) =>(
                     <div>
-                        <span>
+                        <Link to={`/order/${order.id}`}> 
                             <img src={order.product} alt="product" width={300} height={300}/>
-                        </span>
+                        </Link>
                         <span className='displaycart'>
                         <p> {order.price}</p>
                         <p> {order.category}</p>
