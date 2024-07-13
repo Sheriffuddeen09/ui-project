@@ -1,3 +1,6 @@
+import luft from "./images/lufthansa-removebg-preview.png"
+import emirate from"./images/emirate-removebg-preview.png"
+import qatar from "./images/Qatar-removebg-preview.png"
 export const posts = [
     {
         city: "NEW YORK (JFK)",
@@ -14,7 +17,7 @@ export const posts = [
 
 export const boms= [
     {
-        image: "emirate",
+        image: emirate,
         title: "JFK",
         date: "13:00",
         emirate: "EMIRATES",
@@ -26,7 +29,7 @@ export const boms= [
         button: "BOOK NOW"
     },
     {
-        image: "qatar",
+        image: qatar,
         title:  "JFK",
         date: "13:00",
         emirate: "QATAR AIRWAYS",
@@ -38,7 +41,7 @@ export const boms= [
         button: "BOOK NOW"
     },
     {
-        image: "luft",
+        image: luft,
         title: "JFK",
         date: "13:00",
         emirate: "LUFTHANSA",
@@ -50,7 +53,7 @@ export const boms= [
         button: "BOOK NOW"
     },
     {
-        image: "emirate",
+        image: emirate,
         title: "JFK",
         date: "13:00",
         emirate: "EMIRATES",
