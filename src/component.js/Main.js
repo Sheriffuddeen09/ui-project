@@ -1,6 +1,7 @@
 import { getPosts } from "./api/axios"
 import Post from "./Post"
 import { useQuery } from "react-query"
+import { posts } from "./Mapout"
 
 const Main = () => {
 
@@ -8,7 +9,7 @@ const Main = () => {
         isLoading,
         error,
         isError,
-        data: posts
+        data: post
     } = useQuery('posts', getPosts)
 
 
@@ -21,7 +22,7 @@ const Main = () => {
     content = <p>{error.message}</p>
     }
     
-    else{
+   
         content=(
             <div className="mainbackground">
            {
@@ -31,7 +32,7 @@ const Main = () => {
            }
         </div>
         )
-    }
+    
     return content
 }
 export default Main

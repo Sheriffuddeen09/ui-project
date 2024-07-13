@@ -1,12 +1,13 @@
 import { getBoms } from "./api/axios"
 import BomPost from "./BomPost"
 import { useQuery } from "react-query"
+import { boms } from "./Mapout"
 const Bommap = () =>{
     const{
         isLoading,
         error,
         isError,
-        data: boms
+        data: bom
     } = useQuery('boms', getBoms)
 
 
@@ -19,7 +20,6 @@ const Bommap = () =>{
     content = <p>{error.message}</p>
     }
     
-    else{
         content=(
             <div>
             {
@@ -29,7 +29,6 @@ const Bommap = () =>{
             }
         </div>
         )
-    }
     return content
 }
 export default Bommap
