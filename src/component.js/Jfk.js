@@ -25,7 +25,9 @@ const Jfk = () =>{
         <div className='doot'></div>
         <div className='inlins'>
             <p className='p27'>$500</p>
+        <div className='do'></div>
             <p className='p28'>$2500</p>
+        <div className='dos'></div>
         </div>
     </div>
     )
