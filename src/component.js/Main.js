@@ -1,16 +1,37 @@
-import { posts } from "./Mapout"
+import { getPosts } from "./api/axios"
 import Post from "./Post"
-//import { useQuery } from "react-query"
+import { useQuery } from "react-query"
 
 const Main = () => {
-    return (
-        <div className="mainbackground">
+
+    const{
+        isLoading,
+        error,
+        isError,
+        data: posts
+    } = useQuery('posts', getPosts)
+
+
+    let content
+
+    if (isLoading) {
+    content = <p className=""></p>
+    }
+    else if (isError) {
+    content = <p>{error.message}</p>
+    }
+    
+    else{
+        content=(
+            <div className="mainbackground">
            {
             posts.map(post =>(
                 <Post post={post} key={post.id}/>
             ))
            }
         </div>
-    )
+        )
+    }
+    return content
 }
 export default Main
